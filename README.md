@@ -1,5 +1,11 @@
 # YouQianDUDU
 
-Testing Push
+Placed in placeholder index and css
 
-Testing Commit
+Will need to work on resizing for phone
+
+Then dynamic and accessibility
+
+Then security
+
+Then format of the page itself
