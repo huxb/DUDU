@@ -19,3 +19,16 @@ http://searchengineland.com/how-to-use-rich-snippets-structured-markup-for-high-
 call to action "discover how", "read more about", "click here"
 cliffhangers
 
+full white background with huge grey box as footer <----
+grey and orange theme
+huge interactive text top left
+large pictures of author
+
+social media brick win8 style
+
+attraction:bullet heads, summary, voice over, important phrases. relevant and helpful links to previous papers which shares similar qualities
+
+fidget spinner method: (30 sec of intersting videos) + test
+
+light and dark mode
+size of words

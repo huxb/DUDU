@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- usage of gbk for chinese characters, else UTF-8
+  <!-- usage of gbk for chinese characters, else UTF-8 (somehow gbk not working for me, for some reason...)
        meta charset is placed first so the browser knows which encoding to use to parse the rest of the documents -->
-  <meta charset="gbk"> 
-
-  <!-- set the page title here -->
+  <meta charset="UTF-8"> 
   <title>读读文学网,最好的作文都在读读</title>
+  
+  <!-- insert script to change to m.dudu.com 
+  if(navigator.userAgent.toLowerCase().match(/(iphone|ipod|android|ios)/i) && cms_id && cms_id!=="0" ){window.location.href = "https://m.sohu.com/n/" + cms_id}-->
+
   <meta name="keywords" content="读读文学网，看图，议论，记叙，应用，写作网">
   <meta name="description" content="飘天文学提供网络小说在线阅读，做最好的免费小说阅读网!" />
-  <link rel="stylesheet" rev="stylesheet" href="/css/style.css" type="text/css" media="all" />
-  <script language="javascript" type="text/javascript" src="/scripts/common.js"></script>
-  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.4.2/jquery.min.js"></script>
-  <script language="javascript" type="text/javascript" src="/scripts/headerlogin.js"></script>
-  <script language="javascript" type="text/javascript" src="/css/theme.js"></script>
-
-
-
   <link rel="stylesheet" href="css/main.css" />
+  <!-- insert bootstrap and cdn-->
+
+
+
 </head>
-<body>
+<body class="main-page">
   <!-- add your content here -->
-  <h1>Frank Underwood</h1>
-  <img src="img/frankunderwood.jpg" alt="FrankUnderwood">
-  <p>Francis J. "Frank" Underwood is a fictional character and the protagonist of the American version of <a href="https://en.wikipedia.org/wiki/House_of_Cards_(U.S._TV_series)" title="House of Cards(U.S. TV series)"><cite>House of Cards</cite></a>. Frank is described as manipulative, conniving, Machiavellian, sociopathic, and even evil. Throughout the series, he manipulates and destroys several people for his own ends, and commits murder twice. </p>
-  <p>Frank might be a hypocrite and a murderer, but I admire him for his ability to know what he wants and stop at nothing to achieve it. He never once deviated from his goal to obtain as much political power as possible, and that is admirable.
-</body>
+  <div class="wrapper-box">
+
+    <header id="main-header" class="top-head">
+
+      <div class="area">
+        <div class="head-nav left">
+
+          <ul>
+            <li class="index"><a href="http://www.sohu.com"><em class="icon-home icon"></em><em class="sohu-logo">搜狐首页</em></a></li>
+						<li><a href="http://news.sohu.com/">新闻</a></li>
+            <li class="more-nav"><a href="javascript:void(0)">更多<em class="cor"></em></a>	
+
+            <div class="more-nav-box">
+              <a href="http://baobao.sohu.com/">母婴</a>
+							<a href="http://health.sohu.com/">健康</a>
+            </div>
+
+          </ul>
+          
+        </div>
+        <div id="head-login" class="right login"></div>
+      </div>
+
+    </header>
+    
+  </div>
+  </body>
 </html>
