@@ -9,3 +9,6 @@ Then dynamic and accessibility
 Then security
 
 Then format of the page itself
+
+also SSH huxb@vergil.u.washington.edu
+
