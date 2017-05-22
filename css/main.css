@@ -1,0 +1,8 @@
+/* Your CSS rules go here */
+body{
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+    }
+img{
+    max-height: 400px;
+    }
