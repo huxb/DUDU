@@ -32,3 +32,7 @@ fidget spinner method: (30 sec of intersting videos) + test
 
 light and dark mode
 size of words
+
+sort by levels, toughness, relevancy, chance of appearing
+
+get terminal using ctrl `
