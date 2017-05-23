@@ -35,6 +35,10 @@ size of words
 
 sort by levels, toughness, relevancy, chance of appearing
 
+request submission of school paper for subscription duration
+    readable photos would do
+    credited within 24hrs upon valid first submission
+
 get terminal using ctrl `
 
 moving sidebar
