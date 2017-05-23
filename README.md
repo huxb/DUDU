@@ -36,3 +36,14 @@ size of words
 sort by levels, toughness, relevancy, chance of appearing
 
 get terminal using ctrl `
+
+moving sidebar
+<div class="codeWrap fixedRight" id="fixedRight" style="top: 333px;">
+    <div class="code_hd">
+        <a class="code_close" id="fixedRight_closeBtn" href="javascript:;" title="关闭"></a>
+    </div>
+    <div class="code_bd">
+        <span class="code_pic"><img src="http://img1.chuangshi.qq.com/chuangshi/p1/code01.png" width="80" height="80" alt=""></span>
+        <p class="code_txt">QQ阅读<br>客户端下载</p>
+    </div>
+</div>

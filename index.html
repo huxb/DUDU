@@ -18,11 +18,12 @@
 
 </head>
 <body class="main-page">
+  <!-- not sure what is this for -->
   <div class="wrapper-box"><header id="main-header" class="top-head"></header></div>
 
-  <!-- top navigation bar -->
+  <!-- top navigation bar for login, favourites etc -->
   <div class="area">
-    <div class="head-nav left">
+    <div class="head-nav">
 
       <ul>
         <li class="index"><a href="http://www.sohu.com"><em class="icon-home icon"></em><em class="sohu-logo">读读首页</em></a></li>
@@ -41,5 +42,52 @@
     <div id="head-login" class="right login"></div>
   </div>
 
+  <div class="wrap">
+    <link rel="stylesheet" href="body.css">
+
+    <div class="index-logo">
+      <a class="main-logo" href="http://dudu.com" title="读读文学网"></a>
+    </div>
+
+    <div class="index-mainNav">
+      <div class="index-mainNav-top">
+        <h3 class="index-nav-"><a href="http://dudu.com" title="读读文学网"></a></h3>
+        <div id="searchBar" class="index_serach">
+          <i id="searchType" type="all" class="">全部</i><input id="searchInput" type="text" value="战神之王" autocomplete="off" def="战神之王">
+          <a id="searchBtn" class="index_search" href="javascript:">搜 索</a>
+          <div id="searchTypeDropdown" class="index_sub_serach" style="display: none;">
+            <a href="javascript:" type="all">全部</a>
+            <a href="javascript:" type="chuangshi">创世</a>
+            <a href="javascript:" type="yunqi">云起</a>
+            <a href="javascript:" type="dushu">图书</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-mainNav-bot">
+        <p>
+          <a href="http://chuangshi.qq.com/bk/" title="原创书库">原创书库</a>
+          &nbsp;|&nbsp;
+        </p>
+      </div>
+    </div>
+
+    <div class="index-notice">
+      <div class="index-notice-left">
+        <h6></h6>
+        <p></p>
+      </div>
+      <div class="index-notice-right">
+        <ul>
+          <li>
+            <!-- target blank creates new tab -->
+            <span></span><em></em><a href="http://chuangshi.qq.com/bk/" target="_blank">原创书库</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="index_mainNav">
   </body>
 </html>
