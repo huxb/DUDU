@@ -15,15 +15,21 @@
   <!-- insert script to change to m.dudu.com 
   if(navigator.userAgent.toLowerCase().match(/(iphone|ipod|android|ios)/i) && cms_id && cms_id!=="0" ){window.location.href = "https://m.sohu.com/n/" + cms_id}-->
   <!--jQuery CDN-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <!--bootstrap cdn-->
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  <script src="" https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin=" anonymous ""></script>
+  <!--Bootstrap-->
+  <!--CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  <!--
+  <link rel="stylesheet" href="css\bootstrap\bootstrap.css">
+  -->
+  <!--JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin="anonymous"></script>
+  <!--
+  <script src="js\bootstrap\bootstrap.js"></script>
+  -->
 
   <!--Font Awesome Free CDN (LOGO)-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -43,39 +49,58 @@
     <div class="announcement">
       <p>Breaking News!</p>
     </div>
-    <!--Navigation bar-->
-    <nav class="top-nav">
-      <ul>
-        <!--Menu-->
-        <li class="navLink col-md-3">
-          <a href="">Menu</a>
-        </li>
-        <!--Search bar-->
-        <li class="navLink col-md-3">
-          <div id="searchBar">
-            <input id="searchInput" type="text" value="寻找作文" autocomplete="off" def="寻找作文">
-            <i class="fas fa-search fa-3x"></i>
-          </div>
-        </li>
+    <!--Navigation bar (Only one that is stickied)-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <!--Left Navigation-->
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+          <!--Menu-->
+          <li class="navLink nav-item active">
+            <a class="nav-link" href="">Menu</a>
+          </li>
+        </ul>
+      </div>
+      <!--Center Navigation-->
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <!--Right Navigation-->
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <!--Search bar-->
+          <li class="navLink nav-item active">
+            <form class="navbar-form navbar-left searchBar" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="寻找作文">
+              </div>
+              <button type="submit" class="btn btn-default">寻找作文</button>
+            </form>
+          </li>
+          <!--Back to top-->
+          <li class="navLink to_top nav-item active">
+            <a class="nav-link" href="#" aria-label="To page top">
+              <i class="fas fa-arrow-circle-up"></i>To Top</a>
+            </href>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav mr-auto">
         <!--Drop down list-->
-        <li class="navLink navList col-md-3">
+        <li class="navLink nav-item active">
           <div id="searchTypeDropdown" class="index_sub_serach" style="display: none;">
-            <a href="javascript:" type="all">全部</a>
-            <a href="javascript:" type="dushu">图书</a>
+            <a class="nav-link" href="javascript:" type="all">全部</a>
+            <a class="nav-link" href="javascript:" type="dushu">图书</a>
           </div>
-        </li>
-        <!--Back to top-->
-        <li class="navLink to_top col-md-3">
-          <a href="#" aria-label="To page top">
-            <i class="fas fa-arrow-circle-up"></i>To Top</a>
-          </href>
         </li>
       </ul>
     </nav>
     <!--Logo-->
     <div class="logo">
       <a class="main-logo" href="http://dudu.com" title="读读文学网">
-        <img src="img/book.png" width="100" height="50">
+        <img src="img/book.png">
       </a>
     </div>
     <div id="head-login" class="right login"></div>
