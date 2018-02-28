@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- usage of gbk for chinese characters, else UTF-8 (somehow gbk not working for me, for some reason...)
        meta charset is placed first so the browser knows which encoding to use to parse the rest of the documents -->
-  <meta charset="UTF-8"> 
-  <title>读读文学网,最好的作文都在读读</title>
-  
-  <!-- insert script to change to m.dudu.com 
-  if(navigator.userAgent.toLowerCase().match(/(iphone|ipod|android|ios)/i) && cms_id && cms_id!=="0" ){window.location.href = "https://m.sohu.com/n/" + cms_id}-->
 
+  <!-- Metadata -->
+  <meta name="author" content="Xiaobo Hu">
+  <meta charset="UTF-8">
+  <title>读读文学网,最好的作文都在读读</title>
   <meta name="keywords" content="读读文学网，看图，议论，记叙，应用，写作网">
   <meta name="description" content="读读文学提供网络作文在线阅读">
-  <link rel="stylesheet" href="css/main.css" />
-  <!-- insert bootstrap and cdn-->
 
+  <!-- insert script to change to m.dudu.com 
+  if(navigator.userAgent.toLowerCase().match(/(iphone|ipod|android|ios)/i) && cms_id && cms_id!=="0" ){window.location.href = "https://m.sohu.com/n/" + cms_id}-->
+  <!--jQuery CDN-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <!--bootstrap cdn-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
+  <!--Font Awesome Free CDN (LOGO)-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!--local css-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--local js-->
+  <link rel="styesheet" href="js/StopCopyCut.js">
 
 </head>
-<body class="main-page">
-  <!-- not sure what is this for -->
-  <div class="wrapper-box"><header id="main-header" class="top-head"></header></div>
 
-  <!-- top navigation bar for login, favourites etc -->
-  <div class="top">
-    <div class="announcement"></div>
-    <div class="logo"></div>
+<body class="main-page">
+  <!--Header-->
+  <div class="top-header">
+    <!--Announcement bar-->
+    <div class="announcement">
+      <p>Breaking News!</p>
+    </div>
+    <!--Navigation bar-->
     <nav class="top-nav">
       <ul>
-        <li class="index"><a href="http://www.sohu.com"><em class="icon-home icon"></em><em class="">读读首页</em></a></li>
-        <li><a href=""></a></li>
-        <li class="nav-list"><a href="">更多<em class="cor"></em></a>	
-
-        <div class="nav-list">
-          <a href=""></a>
-          <a href=""></a>
-        </div>
-        <!--<div class="fr"><a id="st" href="javascript:st();void 0;">繁體中文</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>-->
-
+        <!--Menu-->
+        <li class="navLink col-md-3">
+          <a href="">Menu</a>
+        </li>
+        <!--Search bar-->
+        <li class="navLink col-md-3">
+          <div id="searchBar">
+            <input id="searchInput" type="text" value="寻找作文" autocomplete="off" def="寻找作文">
+            <i class="fas fa-search fa-3x"></i>
+          </div>
+        </li>
+        <!--Drop down list-->
+        <li class="navLink navList col-md-3">
+          <div id="searchTypeDropdown" class="index_sub_serach" style="display: none;">
+            <a href="javascript:" type="all">全部</a>
+            <a href="javascript:" type="dushu">图书</a>
+          </div>
+        </li>
+        <!--Back to top-->
+        <li class="navLink to_top col-md-3">
+          <a href="#" aria-label="To page top">
+            <i class="fas fa-arrow-circle-up"></i>To Top</a>
+          </href>
+        </li>
       </ul>
-      
     </nav>
+    <!--Logo-->
+    <div class="logo">
+      <a class="main-logo" href="http://dudu.com" title="读读文学网">
+        <img src="img/book.png" width="100" height="50">
+      </a>
+    </div>
     <div id="head-login" class="right login"></div>
   </div>
 
-  <div class="wrap">
-    <link rel="stylesheet" href="css/body.css">
-
-    <div class="index-logo">
-      <a class="main-logo" href="http://dudu.com" title="读读文学网"></a>
+  <div id="main-wrap" class="focus-wrap">
+    <div class="main-left"></div>
+    <div class="main-mid">
+      <!-- possibility to add a rotating list of li in ul -->
     </div>
-
-    <div class="index-mainNav">
-      <div class="index-mainNav-top">
-        <h3 class="index-nav-"><a href="http://dudu.com" title="读读文学网"></a></h3>
-        <div id="searchBar" class="index_serach">
-          <i id="searchType" type="all" class="">全部</i><input id="searchInput" type="text" value="战神之王" autocomplete="off" def="战神之王">
-          <a id="searchBtn" class="index_search" href="javascript:">搜 索</a>
-          <div id="searchTypeDropdown" class="index_sub_serach" style="display: none;">
-            <a href="javascript:" type="all">全部</a>
-            <a href="javascript:" type="chuangshi">创世</a>
-            <a href="javascript:" type="yunqi">云起</a>
-            <a href="javascript:" type="dushu">图书</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="index-mainNav-bot">
-        <p>
-          <a href="http://chuangshi.qq.com/bk/" title="原创书库">原创书库</a>
-          &nbsp;|&nbsp;
-        </p>
-      </div>
-    </div>
-
-    <div class="index-notice">
-      <div class="index-notice-left">
-        <h6></h6>
-        <p></p>
-      </div>
-      <div class="index-notice-right">
-        <ul>
-          <li>
-            <!-- target blank creates new tab -->
-            <span></span><em></em><a href="http://chuangshi.qq.com/bk/" target="_blank">原创书库</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="main-wrap" class="focus-wrap">
-      <div class="main-left"></div>
-      <div class="main-mid">
-        <!-- possibility to add a rotating list of li in ul -->
-      </div>
-      <div class="main-right"></div>
-    </div>
+    <div class="main-right"></div>
+  </div>
 
   </div>
-  </body>
+</body>
+
 </html>
