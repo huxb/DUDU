@@ -16,6 +16,7 @@ body {
   background-color: rgb(69, 78, 85);
   position: sticky;
   top: 0;
+  width: 100%;
 }
 /*Deals with the links within navigation bar*/
 .topNav ul {
