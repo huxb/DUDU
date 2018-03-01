@@ -7,7 +7,7 @@
 
   <!-- Metadata -->
   <meta charset="UTF-8">
-  <!--Enable proper responsive behaviors-->
+  <!--Enable proper responsive behaviors for mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <meta name="author" content="Xiaobo Hu">
@@ -46,13 +46,19 @@
       <p>Breaking News!</p>
     </div>
     <!--Navigation bar (Only one that is stickied)-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="container navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <!--Mini Logo-->
+      <nav class="logo navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="main-logo" href="http://dudu.com" title="读读文学网">
+          <img src="img/book.png" alt="Logo" style="width:40px;">
+        </a>
+      </nav>
       <!--Left Navigation-->
       <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
           <!--Menu-->
-          <li class="navLink nav-item active">
-            <a class="nav-link" href="">Menu</a>
+          <li class="navLink nav-item">
+            <a class="navLink nav-link" href="">Menu</a>
           </li>
         </ul>
       </div>
@@ -64,16 +70,21 @@
         </button>
       </div>
       <!--Right Navigation-->
+      
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <form class="form-inline" action="/action_page.php">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">寻找作文</span>
+              </div>
+              <input type="text" class="form-control" placeholder=" ">
+            </div> 
+          </form>
+        </nav>
         <ul class="navbar-nav ml-auto">
           <!--Search bar-->
           <li class="navLink nav-item active">
-            <form class="navbar-form navbar-left searchBar" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="寻找作文">
-              </div>
-              <button type="submit" class="btn btn-default">寻找作文</button>
-            </form>
           </li>
           <!--Back to top-->
           <li class="navLink to_top nav-item active">
@@ -93,15 +104,16 @@
         </li>
       </ul>
     </nav>
-    <!--Logo-->
+    <!--Center Logo
     <div class="logo">
       <a class="main-logo" href="http://dudu.com" title="读读文学网">
         <img src="img/book.png">
       </a>
     </div>
-    <div id="head-login" class="right login"></div>
+    <div id="head-login" class="right login"></div>-->
   </div>
 
+  <!--random stuff-->
   <div id="main-wrap" class="focus-wrap">
     <div class="main-left"></div>
     <div class="main-mid">
@@ -110,7 +122,6 @@
     <div class="main-right"></div>
   </div>
 
-  </div>
 </body>
 
 </html>

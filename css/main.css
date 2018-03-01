@@ -47,7 +47,7 @@ li{
 }
 
 /*keep nav bar always visible at top*/
-.top-nav{
+.sticky-top{
     position: sticky;
     background: rgb(69, 78, 85);
     width: 100%;
