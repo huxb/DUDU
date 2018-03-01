@@ -51,3 +51,33 @@ moving sidebar
         <p class="code_txt">QQ阅读<br>客户端下载</p>
     </div>
 </div>
+
+
+Bootstrap from CDN / copy from server
+
+Both:
+<head>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- APP CONTENT -->
+
+  <!-- jQuery CDN -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- jQuery local fallback -->
+  <script>window.jQuery || document.write('<script src="/local/jquery.min.js"><\/script>')</script>
+  <!-- Bootstrap JS CDN -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS local fallback -->
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/local/bootstrap.min.js"><\/script>')}</script>
+  <!-- Bootstrap CSS local fallback -->
+  <div id="bootstrapCssTest" class="hidden"></div>
+  <script>
+    $(function() {
+      if ($('#bootstrapCssTest').is(':visible')) {
+        $("head").prepend('<link rel="stylesheet" href="/local/bootstrap.min.css">');
+      }
+    });
+  </script>
+</body>
