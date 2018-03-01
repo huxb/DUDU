@@ -18,101 +18,125 @@
   if(navigator.userAgent.toLowerCase().match(/(iphone|ipod|android|ios)/i) && cms_id && cms_id!=="0" ){window.location.href = "https://m.sohu.com/n/" + cms_id}-->
   <!--CSS -->
   <!--Bootstrap 4-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <!--local css-->
   <link rel="stylesheet" href="css/main.css">
 
 
-  <title>读读文学网,最好的作文都在读读</title>
+  <title>优倩补习网,最好的补习都在优倩</title>
 </head>
 
 <body class="main-page">
-  
+
   <!--JavaScript -->
   <!--jQuery, Popper, Bootstrap-->
   <script src="" https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin=" anonymous ""></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <!--Fontawesome-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!--local js-->
-  <link rel="styesheet" href="js/StopCopyCut.js">
+  <link rel="stylesheet" href="js/main.js">
+  <link rel="stylesheet" href="js/StopCopyCut.js">
 
-  <!--Header-->
-  <div class="top-header">
-    <!--Announcement bar-->
-    <div class="announcement">
-      <p>Breaking News!</p>
-    </div>
-    <!--Navigation bar (Only one that is stickied)-->
-    <nav class="container navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-      <!--Mini Logo-->
-      <nav class="logo navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="main-logo" href="http://dudu.com" title="读读文学网">
-          <img src="img/book.png" alt="Logo" style="width:40px;">
-        </a>
-      </nav>
-      <!--Left Navigation-->
-      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-          <!--Menu-->
-          <li class="navLink nav-item">
-            <a class="navLink nav-link" href="">Menu</a>
-          </li>
-        </ul>
-      </div>
-      <!--Center Navigation-->
-      <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <!--Right Navigation-->
-      
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-          <form class="form-inline" action="/action_page.php">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">寻找作文</span>
-              </div>
-              <input type="text" class="form-control" placeholder=" ">
-            </div> 
-          </form>
-        </nav>
-        <ul class="navbar-nav ml-auto">
-          <!--Search bar-->
-          <li class="navLink nav-item active">
-          </li>
-          <!--Back to top-->
-          <li class="navLink to_top nav-item active">
-            <a class="nav-link" href="#" aria-label="To page top">
-              <i class="fas fa-arrow-circle-up"></i>   To Top</a>
-            </href>
-          </li>
-        </ul>
-      </div>
-      <ul class="navbar-nav mr-auto">
-        <!--Drop down list-->
-        <li class="navLink nav-item active">
-          <div id="searchTypeDropdown" class="index_sub_serach" style="display: none;">
-            <a class="nav-link" href="javascript:" type="all">全部</a>
-            <a class="nav-link" href="javascript:" type="dushu">图书</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!--Center Logo
-    <div class="logo">
-      <a class="main-logo" href="http://dudu.com" title="读读文学网">
-        <img src="img/book.png">
-      </a>
-    </div>
-    <div id="head-login" class="right login"></div>-->
+  <!--Announcement bar-->
+  <div class="announcement">
+    <p>announcement</p>
   </div>
+  <!--Navigation bar (Only one that is stickied)-->
+  <nav class="topNav" id="topNavBar">
+    <a href="#home" title="读读文学网">
+      <img src="img/book.png" alt="Logo" style="width:40px;">
+    </a>
+    <a class="active" href="#home">Home</a>
+    <a href="#home">Exercise</a>
+    <a href="#home">Composition</a>
+    <a href="#home">Schedule</a>
+    <a href="#home">Payment</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </nav>
 
+  <!--Center Logo
+  <div class="logo">
+    <a class="main-logo" href="http://dudu.com" title="读读文学网">
+      <img src="img/book.png">
+    </a>
+  </div>
+  <div id="head-login" class="right login"></div>-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <!--random stuff-->
   <div id="main-wrap" class="focus-wrap">
     <div class="main-left"></div>
