@@ -1,25 +1,23 @@
 /* CSS for body, Navigation bar,*/
 body {
   font-size: 20px;
-  font-family: 宋体, Verdana, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
-  margin: 0;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
 }
 
-.announcement {
+#topAnnounce {
   position: top;
+  display: flex;
+  font-size: 15px;
+}
+#topAnnounce p { 
+  display: inline;
 }
 
-/*Navigation bar grey, panned across the page, and stickied at top*/
-.topNav {
-  overflow: hidden;
-  background-color: rgb(69, 78, 85);
-  position: sticky;
-  top: 0;
-  width: 100%;
-}
-/*Deals with the links within navigation bar*/
-.topNav ul {
+ul {
   list-style: none outside none;
   list-style-type: none;
   list-style-position: outside;
@@ -30,46 +28,107 @@ li {
   display: inline;
   overflow: hidden;
 }
-.topNav a {
+
+/*Color scheme for links, inverse for topContact normal for navBar*/
+.wordColorSchemeInverse {
+  color: rgb(85, 85, 85);
+}
+.wordColorScheme {
+  color: #f3f3f3;
+}
+.wordColorSchemeInverse:hover {
+  background-color: rgb(192, 192, 194);
+  color: rgb(1,1,1);
+  text-decoration: none;
+}
+.wordColorScheme:hover {
+  background-color: rgb(192, 192, 194);
+  color: rgb(27, 27, 27);
+  text-decoration: none;
+}
+
+/*Smooths top and bottom edges */
+.top-edge-shadow {
+	-webkit-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+	   -moz-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+	        box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+}
+.bot-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #C0C0C0;
+	   -moz-box-shadow: 0 8px 6px -6px #C0C0C0;
+	        box-shadow: 0 8px 6px -6px #C0C0C0;
+}
+#topContact {
+  background-color: #C0C0C0;
+  min-height: 30px;
+  display: flex;
+}
+#topContact .float-left ul {
+  font-size: 14px;
+  padding: 5px;
+  margin: auto;
+}
+#topContact .float-left ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#topContact .float-right ul {
+  font-size: 14px;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 5px;
+  margin: auto;
+}
+#topContact .float-right ul li {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*Navigation bar grey, panned across the page, and stickied at top*/
+#topNav {
+  overflow: hidden;
+  background-color: rgb(69, 78, 85);
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+#topNav a {
   float: left;
   display: block;
-  color: #f3f3f3;
   padding: 14px 16px;
   text-decoration: none;
 }
-.topNav a:hover {
-  background-color: rgb(192, 192, 194);
-  color: rgb(27, 27, 27);
-}
-.topNav .active {
+#topNav .active {
   background-color: rgb(240, 139, 6);
   color: rgb(27, 27, 27);
 }
-.topNav .icon {
+#topNav .icon {
   display: none;
 }
 
 @media screen and (max-width: 660px) {
-  .topNav a:not(:first-child) {
+  /* this is to keep logo visible */
+  #topNav a:not(:first-child) {
     display: none;
   }
-  .topNav a.icon {
+  #topNav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 660px) {
-  .topNav.responsive {
+  #topNav.responsive {
     position: relative;
   }
-  .topNav.responsive a.icon {
+  #topNav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topNav.responsive a {
-    float: none;
+  #topNav.responsive a {
+    float: left;
     display: block;
     text-align: left;
   }

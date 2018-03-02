@@ -20,8 +20,10 @@
   <!--Bootstrap 4-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+  <!--import Roboto-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <!--local css-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 
 
   <title>优倩补习网,最好的补习都在优倩</title>
@@ -31,8 +33,7 @@
 
   <!--JavaScript -->
   <!--jQuery, Popper, Bootstrap-->
-  <script src="" https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin=" anonymous ""></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -40,33 +41,103 @@
   <!--Fontawesome-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <!--local js-->
-  <link rel="stylesheet" href="js/main.js">
-  <link rel="stylesheet" href="js/StopCopyCut.js">
+  <link rel="stylesheet" href="/js/main.js">
+  <link rel="stylesheet" href="/js/StopCopyCut.js">
 
   <!--Announcement bar-->
-  <div class="announcement">
-    <p>announcement</p>
+  <div id="topAnnounce">
+    <div class="container-fluid" id="announcement">
+      <!-- place announcement here-->
+      <!-- make it centered with rounded edges, color: yellow-->
+    </div>
+  </div>
+  </div>
+  <!--Top bar-->
+  <div class="top-edge-shadow" id="topContact">
+    <div class="container-fluid">
+      <div class="topbar-column float-left">
+        <ul>
+          <li>
+            <a class="contactDisplay wordColorSchemeInverse" href="mailto:.....@....">
+              <img src="">Email</a>
+          </li>
+          <li>
+            <a class="contactDisplay wordColorSchemeInverse" href="tel:(+65)........">
+              <img src="">Phone</a>
+          </li>
+        </ul>
+      </div>
+      <div class="topbar-column float-right">
+        <ul>
+          <li>
+            <a class="wordColorSchemeInverse" href="">faq</a>
+          </li>
+          <li>
+            <a class="wordColorSchemeInverse" href="">payment</a>
+          </li>
+          <li class="loginCheck">
+            <a class="wordColorSchemeInverse" href="">login</a>
+          </li>
+          <li>
+            <a class="wordColorSchemeInverse" href="#" data-toggle="modal" data-target="#searchModal">
+              <img src="">search
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
   <!--Navigation bar (Only one that is stickied)-->
-  <nav class="topNav" id="topNavBar">
-    <a href="#home" title="读读文学网">
-      <img src="img/book.png" alt="Logo" style="width:40px;">
-    </a>
-    <a class="active" href="#home">Home</a>
-    <a href="#home">Exercise</a>
-    <a href="#home">Composition</a>
-    <a href="#home">Schedule</a>
-    <a href="#home">Payment</a>
-    <a class="icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  <nav class="bot-edge-shadow" id="topNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home" title="优倩补习网">
+        <img src="img/book.png" alt="Logo" style="width:45px;">
+        <span class="sr-only" href="3"></span>
+      </a>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link wordColorScheme active" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="dropdownAboutUs" class="wordColorScheme nav-link dropdown-toggle" href="#home" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownAboutUs">
+              <a class="wordColorScheme dropdown-item" href="#">About Us</a>
+              <a class="wordColorScheme dropdown-item" href="#">Past Achievements</a>
+              <a class="wordColorScheme dropdown-item" href="#">Teaching Model</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="wordColorScheme active" href="#home">Home</a>
+      <a class="wordColorScheme topNavDropBtn" href="javascript:void(0)">About Us</a>
+      <div class="navDropList">
+        <a class="wordColorScheme" href="#home">About Us</a>
+        <a class="wordColorScheme" href="#home">Past Achievements</a>
+        <a class="wordColorScheme" href="#home">Teaching Model</a>
+      </div>
+      <a class="wordColorScheme topNavDropBtn" href="javascript:void(0)">Program</a>
+      <div class="navDropList">
+        <a class="wordColorScheme" href="#home">Pre-school</a>
+        <a class="wordColorScheme" href="#home">Primary 1 & 2</a>
+        <a class="wordColorScheme" href="#home">Primary 3 & 4</a>
+        <a class="wordColorScheme" href="#home">Primary 5 & 6</a>
+        <a class="wordColorScheme" href="#home">Secondary</a>
+      </div>
+      <a class="wordColorScheme" href="#home">Payment</a>
+      <a class="wordColorScheme topNavDropBtn" href="javascript:void(0)">Contact Us</a>
+      <div class="navDropList">
+        <a class="wordColorScheme" href="#home">FAQ</a>
+        <a class="wordColorScheme" href="#home">Email Us</a>
+        <a class="wordColorScheme" href="#home">Call Us</a>
+      </div>
+      <a class="wordColorScheme icon" href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </div>
+    </div>
   </nav>
 
-  <!--Center Logo
-  <div class="logo">
-    <a class="main-logo" href="http://dudu.com" title="读读文学网">
-      <img src="img/book.png">
-    </a>
-  </div>
-  <div id="head-login" class="right login"></div>-->
+  <!--Insert owl carousel swipe here-->
   <br>
   <br>
   <br>
