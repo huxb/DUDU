@@ -26,11 +26,6 @@
   <link rel="stylesheet" href="css/main.css">
 
 
-  <title>优倩补习网,最好的补习都在优倩</title>
-</head>
-
-<body class="main-page">
-
   <!--JavaScript -->
   <!--jQuery, Popper, Bootstrap-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -44,63 +39,78 @@
   <!--local js-->
   <link rel="stylesheet" href="js/main.js">
   <link rel="stylesheet" href="js/StopCopyCut.js">
+  
+  <script>
+  $(function() {
+    $("#content").onload("home.html");
+    $("#content").load(<p>HI</p>);
+  });
+  </script>
+
+  <title>优倩补习网,最好的补习都在优倩</title>
+</head>
+
+<body class="main-page">
 
   <!--Announcement bar-->
   <div id="topAnnounce">
     <div class="container-fluid" id="announcement">
       <!-- place announcement here-->
-      <!-- make it centered with rounded edges, color: yellow-->
+      <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <!-- make it centered with rounded edges, color: light blue-->
     </div>
   </div>
 
   <!--Top bar-->
-  <div class="top-edge-shadow navbar navbar-expand-lg" id="topContact">
+  <div class="top-edge-shadow navbar navbar-expand" id="topContact">
     <div class="container-fluid">
       <!--Note: hidden-sm-down does not actually work on bs4 for some reason, usage of d-none and d-md-block required https://getbootstrap.com/docs/4.0/utilities/display/-->
-      <div class="topbar-column float-left d-none d-md-block">
-        <ul>
-          <li>
-            <a class="contactDisplay wordColorSchemeInverse" href="mailto:.....@....">
-              <img src="img/black-back-closed-envelope-shape.svg" alt="Email" style="width:18px;">     <span class="besideIcon">Email</span></a>
+      <div class="d-none d-md-block mr-auto" id="top-left">
+        <ul class="navbar-nav">
+          <li class="nav-item glow">
+            <a class="nav-link contactDisplay wordColorSchemeInverse" href="mailto:.....@....">
+              <img src="img/Nav Logo/black-back-closed-envelope-shape.svg" alt="Email" style="width:13px;">
+              <span class="besideIcon">inquries@youqian.com</span>
+            </a>
           </li>
-          <li>
-            <a class="contactDisplay wordColorSchemeInverse" href="tel:(+65)........">
-              <img src="img/speech-bubble.svg" alt="Phone" style="width:18px;">
-                <span class="besideIcon">Phone</span></a>
+          <li class="nav-item glow">
+            <a class="nav-link contactDisplay wordColorSchemeInverse" href="tel:(+65)........">
+              <img src="img/Nav Logo/speech-bubble.svg" alt="Phone" style="width:13px;">
+              <span class="besideIcon">(+65) 0123 4567</span>
+            </a>
           </li>
         </ul>
       </div>
-      <div class="topbar-column float-right">
-        <ul>
-          <li>
-            <a class="wordColorSchemeInverse" href="">faq</a>
+      <div class="ml-auto" id="top-right">
+        <ul class="navbar-nav">
+          <li class="nav-item glow">
+            <a class="nav-link contatctDisplay wordColorSchemeInverse" href="">
+              <img src="img/Nav Logo/question-mark.svg" alt="faq" style="width:11px;">
+              <span class="besideIcon">faq</span>
+            </a>
           </li>
-          <li>
-            <a class="wordColorSchemeInverse" href="">payment</a>
+          <!--check cookie and if signed in-->
+          <!--if not signed in-->
+          <li class="nav-item glow">
+            <a class="nav-link contatctDisplay wordColorSchemeInverse" href="">
+              <img src="img/Nav Logo/login.svg" alt="faq" style="width:11px;">
+              <span class="besideIcon">login</span>
+            </a>
           </li>
-          <li class="loginCheck">
-            <a class="wordColorSchemeInverse" href="">login</a>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="wordColorScheme nav-link dropdown-toggle my-2 my-md-0" href="javascript:void(0)" id="dropdownAboutUs" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">About Us</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownAboutUs">
-                <a class="wordColorSchemeInverse dropdown-item" href="#">About Us</a>
-                <a class="wordColorSchemeInverse dropdown-item" href="#">Past Achievements</a>
-                <a class="wordColorSchemeInverse dropdown-item" href="#">Teaching Model</a>
-              </div>
-            </li>
+          <!--if signed in-->
         </ul>
       </div>
     </div>
   </div>
 
   <!--Navigation bar (Only one that is stickied)-->
-  <nav class="bot-edge-shadow navbar navbar-expand-lg navbar-dark" id="topNav">
+  <nav class="bot-edge-shadow navbar navbar-expand-lg navbar-dark sticky-top" id="topNav">
     <div class="container-fluid">
       <!--left Logo-->
       <a class="navbar-brand" href="#" title="优倩补习网">
-        <img src="img/book.png" alt="Logo" style="width:45px;">
+        <img src="img/Logo/book.png" alt="Logo" style="width:45px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropDown" aria-controls="navbarDropDown"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -117,40 +127,43 @@
             <a class="wordColorScheme nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownAboutUs" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">About Us</a>
             <div class="dropdown-menu" aria-labelledby="dropdownAboutUs">
-              <a class="wordColorSchemeInverse dropdown-item" href="#">About Us</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Past Achievements</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Teaching Model</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">About Us</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Past Achievements</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Teaching Model</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="wordColorScheme nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownProgram" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Program</a>
             <div class="dropdown-menu" aria-labelledby="dropdownProgram">
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Pre-school</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Primary 1 & 2</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Primary 3 & 4</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Primary 5 & 6</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Secondary</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Pre-school</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Primary 1 & 2</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Primary 3 & 4</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Primary 5 & 6</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Secondary</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="wordColorScheme nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownContactUs" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Contact Us</a>
             <div class="dropdown-menu" aria-labelledby="dropdownContactUs">
-              <a class="wordColorSchemeInverse dropdown-item" href="#">FAQ</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Email Us</a>
-              <a class="wordColorSchemeInverse dropdown-item" href="#">Call Us</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">FAQ</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Email Us</a>
+              <a class="wordColorSchemeInverse dropdown-item glow" href="#">Call Us</a>
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" placeholder="Search" type="text">
+        <form class="form-inline my-4 my-md-0">
+          <input class="form-control" placeholder="?|" type="text">
         </form>
       </div>
     </div>
   </nav>
 
-  <!--Insert owl carousel swipe here-->
+
+  <!--Content-->
+  <div id="content"></div>
+
   <br>
   <br>
   <br>

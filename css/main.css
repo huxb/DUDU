@@ -6,7 +6,7 @@ body {
   margin: 0px;
   border: 0px;
   padding: 0px;
-  background-color: rgb(255,250,250);
+  background-color: rgb(255, 250, 250);
 }
 
 #topAnnounce {
@@ -14,26 +14,11 @@ body {
   display: flex;
   font-size: 15px;
 }
-#topAnnounce p { 
+#topAnnounce p {
   display: inline;
 }
 
-ul {
-  list-style: none outside none;
-  list-style-type: none;
-  list-style-position: outside;
-  list-style-image: none;
-}
-li {
-  display: inline;
-}
-
-.besideIcon {
-  vertical-align: middle;
-  padding-left: 4px;
-}
-
-/*Color scheme for links, inverse for topContact normal for navBar*/
+/*Color scheme for links, inverse for topContact normal for topNav*/
 .wordColorSchemeInverse {
   color: rgb(85, 85, 85, 0.75);
 }
@@ -41,88 +26,64 @@ li {
   color: #f3f3f3;
 }
 .wordColorSchemeInverse:hover {
-  color: rgb(1,1,1, 0.75);
+  color: rgb(1, 1, 1, 0.75);
   text-decoration: none;
 }
-.wordColorScheme:hover{
+.wordColorScheme:hover {
   color: rgb(223, 165, 5, 0.75);
   text-decoration: none;
 }
+.glow:hover {
+  -webkit-stroke-width: 5.3px;
+  stroke-width: 5.3px;
+  text-shadow: 1px 0px 20px rgba(48, 48, 48, 0.65);
+}
 
-/*Smooths top and bottom edges */
+/*Smooths top and bottom edges for top, topNav and botNav*/
 .top-edge-shadow {
-	-webkit-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
-	   -moz-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
-	        box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+  -webkit-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+  -moz-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+  box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
 }
 .bot-edge-shadow {
-	-webkit-box-shadow: 0 8px 6px -6px rgb(192,192,192);
-	   -moz-box-shadow: 0 8px 6px -6px rgb(192,192,192);
-	        box-shadow: 0 8px 6px -6px rgb(192,192,192);
+  -webkit-box-shadow: 0 8px 6px -6px rgb(192, 192, 192);
+  -moz-box-shadow: 0 8px 6px -6px rgb(192, 192, 192);
+  box-shadow: 0 8px 6px -6px rgb(192, 192, 192);
 }
+
+/* top contact nav*/
 #topContact {
-  background-color: rgb(192,192,192);
-  min-height: 30px;
-  display: flex;
+  background-color: rgb(192, 192, 192, 0.96);
+  max-height: 15px;
+  font-size: 13px;
 }
-#topContact .float-left ul {
-  font-size: 14px;
-  padding: 5px;
-  margin: auto;
+.besideIcon {
+  vertical-align: middle;
 }
-#topContact .float-left ul li {
+#topContact #top-left ul li {
   padding-left: 10px;
   padding-right: 10px;
 }
-#topContact .float-right ul {
-  font-size: 14px;
+#topContact #top-right ul {
   font-variant: small-caps;
   font-weight: bold;
-  padding: 5px;
-  margin: auto;
 }
-#topContact .float-right ul li {
+#topContact #top-right ul li {
   padding-left: 8px;
   padding-right: 8px;
 }
 
 /*Navigation bar grey, panned across the page, and stickied at top*/
 #topNav {
-  background-color: rgb(69, 78, 85);
-  position: sticky;
-  top: 0;
-  width: 100%;
+  background-color: rgb(69, 78, 85, 0.96);
   padding-top: 5px;
   padding-bottom: 5px;
 }
-#topNav li{
+#topNav li {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (max-width: 660px) {
-  /* this is to keep logo visible */
-  #topNav a:not(:first-child) {
-    display: none;
-  }
-  #topNav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 660px) {
-  #topNav.responsive {
-    position: relative;
-  }
-  #topNav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  #topNav.responsive a {
-    float: left;
-    display: block;
-    text-align: left;
-  }
+.carousel-inner div img {
+  width: 100%;
 }
