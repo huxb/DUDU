@@ -13,11 +13,11 @@ body {
 }
 
 a {
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition:  all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  -ms-transition: all .15s linear;
+  -o-transition: all .15s linear;
+  transition: all .15s linear;
 }
 
 #topAnnounce {
@@ -35,17 +35,23 @@ a {
   color: rgba(85, 85, 85, 0.75);
 }
 .wordColorScheme {
-  color: #f3f3f3;
+  color: #ffffff;
 }
 .wordColorSchemeInverse:hover {
-  color: rgba(1, 1, 1, 0.75);
+  color: rgba(25, 25, 25, 0.75) !important;
 }
 .wordColorScheme:hover {
-  color: rgba(223, 165, 5, 0.75);
+  color: rgb(240, 240, 240) !important;
 }
 .glow:hover {
-  stroke-width: 5.3px;
-  text-shadow: 1px 0px 20px rgba(48, 48, 48, 0.65);
+  -webkit-text-stroke-width: 0.2px;
+  stroke-width: 0.2px;
+
+  -webkit-text-shadow: 1px 0px 20px rgba(69, 78, 85, 0.6);
+  -moz-text-shadow: 1px 0px 20px rgba(69, 78, 85, 0.6);
+  -ms-text-shadow: 1px 0px 20px rgba(69, 78, 85, 0.6);
+  -o-text-shadow: 1px 0px 20px rgba(69, 78, 85, 0.6);
+  text-shadow: 1px 0px 20px rgba(69, 78, 85, 0.6);
 }
 
 /*Smooths top and bottom edges for top, topNav and botNav*/
