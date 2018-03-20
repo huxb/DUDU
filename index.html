@@ -88,7 +88,7 @@
           <li class="nav-item glow">
             <a class="nav-link contactDisplay wordColorSchemeInverse" href="">
               <img src="img/Nav-Logo/question-mark.svg" alt="faq" style="width:11px;">
-              <span class="besideIcon">faq</span>
+              <span class="besideIcon" style="color:black;">faq</span>
             </a>
           </li>
           <!--check cookie and if signed in-->
@@ -118,7 +118,8 @@
   </div>
 
   <!--Navigation bar (Only one that is stickied)-->
-  <nav class="bot-edge-shadow navbar navbar-expand-lg navbar-dark sticky-top fixed-top" id="topNav">
+  <!--fixed-top for -ms- else, sticky-top-->
+  <nav class="bot-edge-shadow navbar navbar-expand-lg navbar-dark sticky-top" id="topNav">
     <div class="container-fluid">
       <!--left Logo-->
       <a class="navbar-brand" href="#" title="优倩补习网">

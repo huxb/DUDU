@@ -76,8 +76,8 @@ a {
 /* top contact nav*/
 #topContact {
   background-color: rgba(192, 192, 192, 0.96);
-  max-height: 15px;
   font-size: 13px;
+  height: 20px;
   padding-bottom: 6.5px;
 }
 .besideIcon {
@@ -102,6 +102,7 @@ a {
   background-color: rgba(69, 78, 85, 0.96);
   padding-top: 5px;
   padding-bottom: 5px;
+  min-height: 30px;
 }
 #topNav li {
   padding-left: 15px;
