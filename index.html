@@ -102,18 +102,23 @@
           <!--if signed in-->
           <!--check language-->
           <!--if english-->
-          <li class="nav-item glow">
-            <a id="en" class="nav-link contactDisplay wordColorSchemeInverse" href="#" style="visibility: visible;">EN</a>
-            <a id="cn" class="nav-link contactDisplay wordColorSchemeInverse" href="#" style="visibility: hidden;">中文</a>
+          <li class="nav-item glow" style="display: block;">
+            <a id="en" class="nav-link contactDisplay wordColorSchemeInverse" href="#">
+              <img src="img/Nav-Logo/english.svg" alt="en" style="width:11px;">
+            </a>
           </li>
-          <!--if chinese-->
+          <li class="nav-item glow" style="display: none;">
+            <a id="cn" class="nav-link contactDisplay wordColorSchemeInverse" href="#">
+              <img src="img/Nav-Logo/chinese.svg" alt="cn" style="width:11px;">
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 
   <!--Navigation bar (Only one that is stickied)-->
-  <nav class="bot-edge-shadow navbar top-edge-shadow navbar-expand-lg navbar-dark sticky-top" id="topNav">
+  <nav class="bot-edge-shadow navbar navbar-expand-lg navbar-dark sticky-top fixed-top" id="topNav">
     <div class="container-fluid">
       <!--left Logo-->
       <a class="navbar-brand" href="#" title="优倩补习网">
@@ -126,12 +131,12 @@
       <div class="collapse navbar-collapse" id="navbarDropDown">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link wordColorScheme active glow" href="#home">Home
+            <a class="nav-link wordColorScheme active glowInverse" href="#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="wordColorScheme nav-link dropdown-toggle glow" href="javascript:void(0)" id="dropdownAboutUs" data-toggle="dropdown"
+            <a class="wordColorScheme nav-link dropdown-toggle glowInverse" href="javascript:void(0)" id="dropdownAboutUs" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">About Us</a>
             <div class="dropdown-menu" aria-labelledby="dropdownAboutUs">
               <a class="wordColorSchemeInverse dropdown-item glow" href="#">About Us</a>
@@ -140,7 +145,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="wordColorScheme nav-link dropdown-toggle glow" href="javascript:void(0)" id="dropdownProgram" data-toggle="dropdown"
+            <a class="wordColorScheme nav-link dropdown-toggle glowInverse" href="javascript:void(0)" id="dropdownProgram" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Program</a>
             <div class="dropdown-menu" aria-labelledby="dropdownProgram">
               <a class="wordColorSchemeInverse dropdown-item glow" href="#">Pre-school</a>
@@ -151,7 +156,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="wordColorScheme nav-link dropdown-toggle" href="javascript:void(0)" id="dropdownContactUs" data-toggle="dropdown"
+            <a class="wordColorScheme nav-link dropdown-toggle glowInverse" href="javascript:void(0)" id="dropdownContactUs" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Contact Us</a>
             <div class="dropdown-menu" aria-labelledby="dropdownContactUs">
               <a class="wordColorSchemeInverse dropdown-item glow" href="#">FAQ</a>
@@ -183,69 +188,91 @@
   <footer>
     <div class="splitter"></div>
     <ul>
-        <li>
-            <div class="icon" data-icon="E"></div>
-            <div class="text">
-                <h4>About</h4>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
-            </div>
-        </li>
-        <li>
-            <div class="icon" data-icon="a"></div>
-            <div class="text">
-                <h4>Archive</h4>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
-            </div>
-        </li>
-        <li>
-            <div class="icon" data-icon="s"></div>
-            <div class="text">
-                <h4>Cloud</h4>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis, metus in dictum feugiat, odio orci rhoncus metus. <a href="#">Read more</a></div>
-            </div>
-        </li>
+      <li>
+        <div class="icon" data-icon="E"></div>
+        <div class="text">
+          <h4>About</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque
+            arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis,
+            metus in dictum feugiat, odio orci rhoncus metus.
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" data-icon="a"></div>
+        <div class="text">
+          <h4>Archive</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque
+            arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis,
+            metus in dictum feugiat, odio orci rhoncus metus.
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="icon" data-icon="s"></div>
+        <div class="text">
+          <h4>Cloud</h4>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque
+            arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis,
+            metus in dictum feugiat, odio orci rhoncus metus.
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </li>
     </ul>
 
     <div class="bar">
-        <div class="bar-wrap">
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">License</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Advertise</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
+      <div class="bar-wrap">
+        <ul class="links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">License</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Advertise</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
 
-            <div class="social">
-                <a href="#" class="fb">
-                    <span data-icon="f" class="icon"></span>
-                    <span class="info">
-                        <span class="follow">Become a fan Facebook</span>
-                        <span class="num">9,999</span>
-                    </span>
-                </a>
+        <div class="social">
+          <a href="#" class="fb">
+            <span data-icon="f" class="icon"></span>
+            <span class="info">
+              <span class="follow">Become a fan Facebook</span>
+              <span class="num">9,999</span>
+            </span>
+          </a>
 
-                <a href="#" class="tw">
-                    <span data-icon="T" class="icon"></span>
-                    <span class="info">
-                        <span class="follow">Follow us Twitter</span>
-                        <span class="num">9,999</span>
-                    </span>
-                </a>
+          <a href="#" class="tw">
+            <span data-icon="T" class="icon"></span>
+            <span class="info">
+              <span class="follow">Follow us Twitter</span>
+              <span class="num">9,999</span>
+            </span>
+          </a>
 
-                <a href="#" class="rss">
-                    <span data-icon="R" class="icon"></span>
-                    <span class="info">
-                        <span class="follow">Subscribe RSS</span>
-                        <span class="num">9,999</span>
-                    </span>
-                </a>
-            </div>
-            <div class="clear"></div>
-            <div class="copyright">©  2014 All Rights Reserved</div>
+          <a href="#" class="rss">
+            <span data-icon="R" class="icon"></span>
+            <span class="info">
+              <span class="follow">Subscribe RSS</span>
+              <span class="num">9,999</span>
+            </span>
+          </a>
         </div>
+        <div class="clear"></div>
+        <div class="copyright">© 2014 All Rights Reserved</div>
+      </div>
     </div>
-</footer>
+  </footer>
   <br>
   <br>
   <br>
