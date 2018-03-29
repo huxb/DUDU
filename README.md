@@ -43,6 +43,104 @@ Specificity issue:
   First selector is overriding the second because of having an ID
   e.g. .icon would not work if .topNav was not referenced previously
 
+
+
+  <div class="splitter"></div>
+  <ul>
+    <li>
+      <div class="icon" data-icon="E"></div>
+      <div class="text">
+        <h4>About</h4>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque
+          arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis,
+          metus in dictum feugiat, odio orci rhoncus metus.
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="icon" data-icon="a"></div>
+      <div class="text">
+        <h4>Archive</h4>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque
+          arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis,
+          metus in dictum feugiat, odio orci rhoncus metus.
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="icon" data-icon="s"></div>
+      <div class="text">
+        <h4>Cloud</h4>
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique justo eu sollicitudin pretium. Nam scelerisque
+          arcu at dui porttitor, non viverra sapien pretium. Nunc nec dignissim nunc. Sed eget est purus. Sed convallis,
+          metus in dictum feugiat, odio orci rhoncus metus.
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div class="bar">
+    <div class="bar-wrap">
+      <ul class="links">
+        <li>
+          <a href="#" class="rss">
+            <span href="#" class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="rss">
+            <span href="#" class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li>
+          <a href="#">Advertise</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+
+      <div class="social">
+        <a href="#" class="fb">
+          <span data-icon="f" class="icon"></span>
+          <span class="info">
+            <span class="follow">Become a fan Facebook</span>
+            <span class="num">9,999</span>
+          </span>
+        </a>
+
+        <a href="#" class="tw">
+          <span data-icon="T" class="icon"></span>
+          <span class="info">
+            <span class="follow">Follow us Twitter</span>
+            <span class="num">9,999</span>
+          </span>
+        </a>
+
+        <a href="#" class="rss">
+          <span data-icon="R" class="icon"></span>
+          <span class="info">
+            <span class="follow">Subscribe RSS</span>
+            <span class="num">9,999</span>
+          </span>
+        </a>
+      </div>
+      <div class="clear"></div>
+      <div class="copyright">© 2014 All Rights Reserved</div>
+    </div>
+  </div>
+
+  
 TODO: +1 day
 Monday{
   Footer

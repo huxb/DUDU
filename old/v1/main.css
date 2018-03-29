@@ -8,9 +8,8 @@ body {
   margin: 0px;
   border: 0px;
   padding: 0px;
+  background-color: rgba(255, 250, 250, 0.0);
   text-decoration: none;
-  background-color: rgb(84, 80, 68);
-  white-space: nowrap;
 }
 
 a {
@@ -19,15 +18,6 @@ a {
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-}
-
-.alignLeft {
-  text-align: left;
-  margin: 0px;
-}
-.alignRight {
-  text-align: right;
-  margin: 0px;
 }
 
 /*Color scheme*/
@@ -40,16 +30,11 @@ a {
 .wordColorSchemeNorm {
   color: rgba(255, 255, 255, 0.5);
 }
-.wordColorSchemeNormDark {
-  color: rgba(255, 255, 255, 0.7);
-}
 .wordColorSchemeInverse:hover {
   color: rgba(25, 25, 25, 0.75) !important;
-  text-decoration: none;
 }
 .wordColorScheme:hover {
   color: rgb(240, 240, 240) !important;
-  text-decoration: none;
 }
 .glow:hover {
   -webkit-text-stroke-width: 0.15px;
@@ -88,16 +73,6 @@ a {
   -moz-box-shadow: 0 -8px 6px -6px rgb(192, 192, 192);
   box-shadow: 0 -8px 6px -6px rgb(192, 192, 192);
 }
-.inset-shadow {
-  -webkit-box-shadow: inset 0px -1px 8px 1px rgb(161, 161, 161);
-  -moz-box-shadow: inset 0px -1px 8px 1px rgb(161, 161, 161);
-  box-shadow: inset 0px -1px 8px 1px rgb(161, 161, 161);
-}
-.inset-shadow-btn {
-  -webkit-box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
-  -moz-box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
-  box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
-}
 
 /*Top announcement bar*/
 #topAnnounce {
@@ -115,11 +90,6 @@ a {
   font-size: 13px;
   height: 20px;
   padding-bottom: 6.5px;
-  position: relative;
-  z-index: 1;
-}
-#top-left {
-  padding-left: 20px;
 }
 .besideIcon {
   vertical-align: middle;
@@ -127,10 +97,6 @@ a {
 #topContact #top-left ul li {
   padding-left: 10px;
   padding-right: 10px;
-  display: inline;
-}
-#top-right {
-  padding-right:20px;
 }
 #topContact #top-right ul {
   font-variant: small-caps;
@@ -139,18 +105,11 @@ a {
 #topContact #top-right ul li {
   padding-left: 8px;
   padding-right: 8px;
-  display: inline;
 }
 
 #content {
   position: relative;
   z-index: 2;
-}
-
-#content-skirt {
-  position: relative;
-  z-index: -1;
-  border-bottom: 475px solid rgba(12, 4, 4, 0);
 }
 
 /*Navigation bar grey, panned across the page, and stickied at top*/
@@ -173,9 +132,9 @@ a {
 footer {
   bottom: 0px;
   width: 100%;
-  position: fixed;
+  position: sticky;
   text-align: center;
-  background-color: rgba(84, 80, 68, 0.96);
+  background-color: rgba(69, 78, 85, 0.96);
   font-size: 13px;
 }
 
@@ -183,35 +142,9 @@ footer {
   padding-top: 8px;
 }
 
-#foot-nav {
-  text-align: left;
-}
-
-h4 {
+h6 {
   margin: 0px;
   color: rgba(255, 217, 0, 0.65);
-  padding-bottom: 5px;
-}
-
-h6 {
-  padding-top: 6px;
-  font-weight: bold;
-}
-
-#txt {
-  margin: 0px;
-}
-
-.btn-primary {
-  border-radius: 25px;
-  background-color: rgba(255, 217, 0, 0.65);
-  border-color: rgba(179, 152, 0, 0.65);
-  color: rgba(84, 80, 68, 0.96);
-}
-.btn-primary:hover {
-  background-color: rgb(255, 217, 0);
-  border-color: rgb(179, 152, 0);
-  color: rgba(0, 0, 0, 0.96);
 }
 .line {
   height: 4px;
@@ -223,16 +156,13 @@ h6 {
   list-style: none outside none;
   padding: 0px;
   margin: 0px;
+  padding-top: 5px;
 }
-#foot-base {
-  margin-bottom: 15px;
-  white-space: nowrap;
-}
+
 #social {
   left: 0;
   bottom: 0;
   align-content: center;
-  vertical-align: middle;
 }
 #social .icon {
   display: inline-block;
@@ -254,7 +184,7 @@ h6 {
 }
 
 #social a.facebook:hover {
-  color: rgb(0, 132, 255) !important;
+  color: rgb(0,132,255) !important;
 }
 #social a.twitter:hover {
   color: rgb(29, 161, 242) !important;
@@ -266,19 +196,18 @@ h6 {
   color: rgb(242, 101, 34) !important;
 }
 
-#legal ul li {
-  display: inline;
+.alignLeft {
+  text-align: left;
+  margin: 0px;
+}
+
+#legal {
+  display: inline-block;
 }
 
 #copyright {
   color: rgba(119, 136, 136, 0.75);
-  background-color: rgba(95, 95, 95, 0.96);
-  bottom: 0px;
-  width: 100%;
-  position: fixed;
-  font-size: 12px;
-  max-height: 17px;
-
+  margin-top: 5px;
 }
 
 /*
