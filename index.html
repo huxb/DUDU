@@ -13,9 +13,6 @@
   <meta name="author" content="Xiaobo Hu">
   <meta name="keywords" content="读读文学网，看图，议论，记叙，应用，写作网">
   <meta name="description" content="读读文学提供网络作文在线阅读">
-
-  <!-- insert script to change to m.dudu.com 
-  if(navigator.userAgent.toLowerCase().match(/(iphone|ipod|android|ios)/i) && cms_id && cms_id!=="0" ){window.location.href = "https://m.sohu.com/n/" + cms_id}-->
   <!--CSS -->
   <!--Bootstrap 4-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -37,15 +34,7 @@
   <!--Fontawesome-->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
     crossorigin="anonymous"></script>
-  <!--local js-->
-  <link rel="stylesheet" href="js/main.js">
-  <link rel="stylesheet" href="js/StopCopyCut.js">
 
-  <script>
-    $(function () {
-      $("#content").load("home.html");
-    });
-  </script>
 
   <title>优倩补习网,最好的补习都在优倩</title>
 </head>
@@ -68,8 +57,9 @@
     <div class="row">
       <!--Note: hidden-sm-down does not actually work on bs4 for some reason, usage of d-none and d-md-block required https://getbootstrap.com/docs/4.0/utilities/display/-->
       <div class="d-none d-md-block mr-auto" id="top-left">
-        <div="container">
+        <div class="container">
           <div class="row">
+
             <ul>
               <li class="col glow">
                 <a class="contactDisplay wordColorSchemeInverse" href="mailto:.....@....">
@@ -84,9 +74,10 @@
                   <span class="besideIcon">(+65) 0123 4567</span>
                 </a>
               </li>
-
             </ul>
+
           </div>
+        </div>
       </div>
 
       <div class="ml-auto" id="top-right">
@@ -130,7 +121,6 @@
         </div>
       </div>
     </div>
-  </div>
   </div>
 
   <!--Navigation bar (Only one that is stickied)-->
@@ -189,8 +179,8 @@
           </li>
 
         </ul>
-        <form class="inset-shadow form-inline my-4 my-md-0">
-          <input class="form-control" placeholder="Search" type="text">
+        <form class="form-inline my-4 my-md-0">
+          <input class="inset-shadow form-control" placeholder="Search" type="search">
         </form>
       </div>
     </div>
@@ -198,12 +188,13 @@
 
 
   <!--Content-->
+  <!--this is where content will be injected-->
+  <div ui-view class="container ng-scope"></div>
   <div id="content"></div>
-
-  <div id="content-skirt"></div>
+  <div id="contentSkirt" onload="setFootSkirt();"></div>
 
   <!--footer-->
-  <footer class="foot-edge-shadow">
+  <footer class="foot-edge-shadow" id="foot">
 
     <div class="container" id="foot-top">
       <div class="row">
@@ -219,8 +210,9 @@
                     <div class="col">
 
                       <h6 class="wordColorSchemeNormDark">Location</h6>
-                      <p>925, Bukit Timah Road #08-13
-                        <br>Singapore 589640</p>
+                      <a class="wordColorScheme glow" href="">925, Bukit Timah Road
+                        <br>#08-13
+                        <br>Singapore 589640</a>
                     </div>
 
                     <div class="col">
@@ -246,7 +238,7 @@
                 <h4>Navigation</h4>
                 <div class="container-fluid">
 
-                  <ul>
+                  <ul class="row">
                     <li class="col">
                       <a class="wordColorScheme glow" href="">Home</a>
                     </li>
@@ -322,14 +314,13 @@
 
                 <div class="col">
                   <div class="form-group">
-                    <input type="name" class="inset-shadow form-control" id="input-name" aria-describedby="inputName" placeholder="First & Last name"
-                      type="text">
+                    <input type="text" class="inset-shadow form-control" id="input-name" placeholder="First & Last name">
                   </div>
                 </div>
 
                 <div class="col">
                   <div class="form-group">
-                    <input type="email" class="inset-shadow form-control" id="input-password" aria-describedby="inputEmail" placeholder="Email Address">
+                    <input type="email" class="inset-shadow form-control" id="input-password" aria-describedby="nnassurance" placeholder="Email Address">
                   </div>
                 </div>
               </div>
@@ -344,15 +335,15 @@
                 </select>
               </div>
               <div class="form-group" id="txt">
-                <textarea class="inset-shadow form-control" id="exampleTextarea" rows="3" placeholder="Question"></textarea>
+                <textarea class="inset-shadow form-control" id="input-txt" rows="3" placeholder="Question"></textarea>
               </div>
-              <small id="nnassurance" class="form-text text-muted alignLeft">We'll never share your personal information with anyone else.</small>
+              <small class="form-text text-muted alignLeft" id="nnassurance">We'll never share your personal information with anyone else.</small>
               <div class="row">
 
                 <div class="col">
                   <div class="form-check alignLeft">
-                    <label class="form-check-label" id="check-txt">
-                      <input type="checkbox" class="form-check-input">Receive a copy of this question as Email
+                    <label class="form-check-label" id="check-send">
+                      <input type="checkbox" class="inset-shadow form-check-input">Receive a copy of this question as Email
                     </label>
                   </div>
                 </div>
@@ -402,6 +393,13 @@
     </div>
   </footer>
 
+  <!--local js-->
+
+  <script src="js/main.js"></script>
+  <script src="js/StopCopyCut.js"></script>
+  <script>
+  </script>
 </body>
+
 
 </html>
