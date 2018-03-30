@@ -10,7 +10,6 @@ body {
   padding: 0px;
   text-decoration: none;
   background-color: rgb(84, 80, 68);
-  white-space: nowrap;
 }
 
 a {
@@ -130,7 +129,7 @@ a {
   display: inline;
 }
 #top-right {
-  padding-right:20px;
+  padding-right: 20px;
 }
 #topContact #top-right ul {
   font-variant: small-caps;
@@ -183,7 +182,7 @@ footer {
   padding-top: 8px;
 }
 
-#foot-nav {
+#foot-top-left {
   text-align: left;
 }
 
@@ -196,6 +195,10 @@ h4 {
 h6 {
   padding-top: 6px;
   font-weight: bold;
+}
+
+#foot-nav ul li {
+  display: inline;
 }
 
 #txt {
@@ -225,7 +228,7 @@ h6 {
   margin: 0px;
 }
 #foot-base {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   white-space: nowrap;
 }
 #social {
@@ -233,10 +236,11 @@ h6 {
   bottom: 0;
   align-content: center;
   vertical-align: middle;
+  white-space: nowrap;
 }
 #social .icon {
   display: inline-block;
-  font-size: 30px;
+  font-size: 25px;
   vertical-align: middle;
 
   -webkit-transition: -webkit-transform 0.3s linear;
@@ -278,7 +282,45 @@ h6 {
   position: fixed;
   font-size: 12px;
   max-height: 17px;
+}
 
+@media screen and (max-width: 1200px) {
+  #social .icon {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #social {
+    font-size: 10px;
+  }
+  #social ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #legal ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #check-txt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nnassurance {
+    font-size:10px;
+  }
+  #check-txt {
+    font-size: 10px;
+  }
+  #social ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 /*
