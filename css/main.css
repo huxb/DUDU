@@ -29,6 +29,11 @@ a {
   margin: 0px;
 }
 
+ul {
+  list-style: none outside none;
+  padding: 0px;
+  margin: 0px;
+}
 /*Color scheme*/
 .wordColorSchemeInverse {
   color: rgba(85, 85, 85, 0.75);
@@ -141,16 +146,6 @@ a {
   display: inline;
 }
 
-#content {
-  position: relative;
-  z-index: 2;
-}
-
-#content-skirt {
-  position: relative;
-  z-index: -1;
-  border-bottom: 475px solid rgba(12, 4, 4, 0);
-}
 
 /*Navigation bar grey, panned across the page, and stickied at top*/
 #topNav {
@@ -169,6 +164,20 @@ a {
   width: 100%;
 }
 
+/*content*/
+#content {
+  position: relative;
+  z-index: 2;
+}
+
+/*content skirt to show footer*/
+#content-skirt {
+  position: relative;
+  z-index: -1;
+  border-bottom: 355px solid rgba(12, 4, 4, 0);
+}
+
+/*footer*/
 footer {
   bottom: 0px;
   width: 100%;
@@ -180,6 +189,7 @@ footer {
 
 #foot-top {
   padding-top: 8px;
+  padding-bottom: 15px;
 }
 
 #foot-top-left {
@@ -201,10 +211,44 @@ h6 {
   display: inline;
 }
 
+#foot-social {
+  padding-top: 10px;
+}
+#foot-social .icon {
+  display: inline-block;
+  font-size: 25px;
+  vertical-align: middle;
+  padding: 5px;
+
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -ms-transition: -ms-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+#foot-social a:hover .icon {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+#foot-social a.facebook:hover {
+  color: rgb(0, 132, 255) !important;
+}
+#foot-social a.twitter:hover {
+  color: rgb(29, 161, 242) !important;
+}
+#foot-social a.google:hover {
+  color: rgb(219, 68, 55) !important;
+}
+#foot-social a.rss:hover {
+  color: rgb(242, 101, 34) !important;
+}
+
 #txt {
   margin: 0px;
 }
-
 .btn-primary {
   border-radius: 25px;
   background-color: rgba(255, 217, 0, 0.65);
@@ -216,62 +260,23 @@ h6 {
   border-color: rgb(179, 152, 0);
   color: rgba(0, 0, 0, 0.96);
 }
+
 .line {
   height: 4px;
   align-content: center;
   border-bottom: 1px solid rgba(255, 217, 0, 0.65);
 }
 
-.row ul {
-  list-style: none outside none;
-  padding: 0px;
-  margin: 0px;
-}
-#foot-base {
+#legal {
+  margin-top: 1px;
   margin-bottom: 18px;
   white-space: nowrap;
 }
-#social {
-  left: 0;
-  bottom: 0;
-  align-content: center;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-#social .icon {
-  display: inline-block;
-  font-size: 25px;
-  vertical-align: middle;
-
-  -webkit-transition: -webkit-transform 0.3s linear;
-  -moz-transition: -moz-transform 0.3s linear;
-  -ms-transition: -ms-transform 0.3s linear;
-  -o-transition: -o-transform 0.3s linear;
-  transition: transform 0.3s linear;
-}
-#social a:hover .icon {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-#social a.facebook:hover {
-  color: rgb(0, 132, 255) !important;
-}
-#social a.twitter:hover {
-  color: rgb(29, 161, 242) !important;
-}
-#social a.google:hover {
-  color: rgb(219, 68, 55) !important;
-}
-#social a.rss:hover {
-  color: rgb(242, 101, 34) !important;
-}
-
 #legal ul li {
   display: inline;
+  text-align: center;
+  padding-left: 30px; 
+  padding-right: 30px;
 }
 
 #copyright {
@@ -284,29 +289,29 @@ h6 {
   max-height: 17px;
 }
 
-@media screen and (max-width: 1200px) {
-  #social .icon {
-    font-size: 20px;
+
+@media screen and (max-width: 1000px) {
+  #legal ul li {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  #social {
-    font-size: 10px;
+@media screen and (max-width: 992px) {
+  #content-skirt {
+    border-bottom: 350px solid rgba(12, 4, 4, 0);
   }
-  #social ul li {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+}
+@media screen and (max-width: 500px) {
   #legal ul li {
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: 12px;
   }
 }
-
 @media screen and (max-width: 360px) {
   #check-txt {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
@@ -317,7 +322,7 @@ h6 {
   #check-txt {
     font-size: 10px;
   }
-  #social ul li {
+  #foot-social ul li {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -358,7 +363,7 @@ footer > ul li:first-child {
 footer > ul li:nth-child(3) {
     padding-right: 0;
 }
-footer > #social .icon {
+footer > #foot-social .icon {
     color: #999999;
     float: left;
     font-size: 80px;
@@ -412,7 +417,7 @@ footer .bar-wrap {
 .links a:hover {
     color: #FFFFFF;
 }
-#social a {
+#foot-social a {
     color: #778888;
     margin-left: 20px;
 }

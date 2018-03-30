@@ -25,6 +25,27 @@
   <!--local css-->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 
+  <!--JavaScript -->
+  <!--placed at the end of the document so pages load faster-->
+  <!--jQuery, Popper, Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Fontawesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <!--local js-->
+  <link rel="stylesheet" href="js/main.js">
+  <link rel="stylesheet" href="js/StopCopyCut.js">
+
+  <script>
+    $(function () {
+      $("#content").load("home.html");
+    });
+  </script>
 
   <title>优倩补习网,最好的补习都在优倩</title>
 </head>
@@ -220,9 +241,11 @@
                 </div>
 
               </li>
+
               <li class="wordColorSchemeNorm" id="foot-nav">
                 <h4>Navigation</h4>
                 <div class="container-fluid">
+
                   <ul>
                     <li class="col">
                       <a class="wordColorScheme glow" href="">Home</a>
@@ -240,25 +263,49 @@
                       <a class="wordColorScheme glow" href="">Sign Up</a>
                     </li>
                   </ul>
+
                 </div>
               </li>
-              <li>
-                <a class="wordColorScheme glow" href="#">Get Started</a>
-              </li>
-              <li>
-                <a class="wordColorScheme glow" href="#">About Us</a>
-              </li>
-              <li>
-                <a class="wordColorScheme glow" href="#">Program</a>
-              </li>
-              <li>
-                <a class="wordColorScheme glow" href="#">Information</a>
-              </li>
-              <li>
-                <a class="wordColorScheme glow" href="#">Achievements</a>
-              </li>
-              <li>
-                <a class="wordColorScheme glow" href="#">Teaching Model</a>
+
+              <li class="wordColorSchemeNorm" id="foot-social">
+                <h4>Follow Us</h4>
+                <div class="container-fluid">
+                  <ul class="row">
+
+                    <li class="col">
+                      <a href="#" class="wordColorScheme glow facebook">
+                        <span href="#" class="icon">
+                          <i class="fab fa-facebook-square"></i>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="col">
+                      <a href="#" class="wordColorScheme glow twitter">
+                        <span href="#" class="icon">
+                          <i class="fab fa-twitter"></i>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="col">
+                      <a href="#" class="wordColorScheme glow google">
+                        <span href="#" class="icon">
+                          <i class="fab fa-google-plus-g"></i>
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="col">
+                      <a href="#" class="wordColorScheme glow rss">
+                        <span href="#" class="icon">
+                          <i class="fa fa-rss"></i>
+                        </span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -322,108 +369,39 @@
       </div>
 
     </div>
-
+    <!--
     <div class="container" id="foot-base">
-      <div class="row">
+      <div class="row">-->
 
-        <div class="col-md" id="social">
-          <div class="container">
-            <ul class="row">
-
-              <li class="col">
-                <div class="besideIcon">
-                  <h6 class="wordColorSchemeNormDark alignLeft">Follow Us</h6>
-                  <p class="wordColorSchemeNorm alignLeft">on social media!</p>
-                </div>
-              </li>
-
-              <li class="col">
-                <a href="#" class="wordColorScheme glow facebook">
-                  <span href="#" class="icon">
-                    <i class="fab fa-facebook-square"></i>
-                  </span>
-                </a>
-              </li>
-
-              <li class="col">
-                <a href="#" class="wordColorScheme glow twitter">
-                  <span href="#" class="icon">
-                    <i class="fab fa-twitter"></i>
-                  </span>
-                </a>
-              </li>
-
-              <li class="col">
-                <a href="#" class="wordColorScheme glow google">
-                  <span href="#" class="icon">
-                    <i class="fab fa-google-plus-g"></i>
-                  </span>
-                </a>
-              </li>
-
-              <li class="col">
-                <a href="#" class="wordColorScheme glow rss">
-                  <span href="#" class="icon">
-                    <i class="fa fa-rss"></i>
-                  </span>
-                </a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-
-        <div class="d-none d-sm-block col">
-          <div class="container" id="legal">
-            <ul class="row">
-              <li class="col">
-                <a class="wordColorScheme glow" href="#">Legal</a>
-              </li>
-              <li class="col">
-                <a class="wordColorScheme glow" href="#">Privacy Policy</a>
-              </li>
-              <li class="col">
-                <a class="wordColorScheme glow" href="#">Contact Us</a>
-              </li>
-              <li class="col">
-                <a class="wordColorScheme glow" href="#">Help</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
+    <div class="line"></div>
+    <div id="legal">
+      <ul>
+        <li>
+          <a class="wordColorScheme glow" href="#">Legal</a>
+        </li>
+        <li>
+          <a class="wordColorScheme glow" href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a class="wordColorScheme glow" href="#">Contact Us</a>
+        </li>
+        <li>
+          <a class="wordColorScheme glow" href="#">Help</a>
+        </li>
+      </ul>
 
     </div>
+
+    <!--
+      </div>
+
+    </div>-->
 
     <div id="copyright">
       <p>© 2018 All Rights Reserved</p>
     </div>
   </footer>
 
-  <!--JavaScript -->
-  <!--placed at the end of the document so pages load faster-->
-  <!--jQuery, Popper, Bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <!--Fontawesome-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
-    crossorigin="anonymous"></script>
-  <!--local js-->
-  <link rel="stylesheet" href="js/main.js">
-  <link rel="stylesheet" href="js/StopCopyCut.js">
-
-  <script>
-    $(function () {
-      $("#content").load("home.html");
-    });
-  </script>
 </body>
 
 </html>
