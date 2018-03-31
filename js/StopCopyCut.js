@@ -1,5 +1,4 @@
-<script src="jquery.min.js"></script>
-<script type="text/javascript">
+
 $(document).ready(function () {
     //Disable cut copy paste
     $('body').bind('cut copy', function (e) {
@@ -11,4 +10,3 @@ $(document).ready(function () {
         return false;
     })
 });
-</script>

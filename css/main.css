@@ -27,16 +27,13 @@ a {
   text-align: left;
   margin: 0px;
 }
-.alignRight {
-  text-align: right;
-  margin: 0px;
-}
 
 ul {
   list-style: none outside none;
   padding: 0px;
   margin: 0px;
 }
+
 /*Color scheme*/
 .wordColorSchemeInverse {
   color: rgba(85, 85, 85, 0.75);
@@ -131,7 +128,7 @@ ul {
 .besideIcon {
   vertical-align: middle;
 }
-#topContact #top-left ul li {
+#top-left ul li {
   padding-left: 10px;
   padding-right: 10px;
   display: inline;
@@ -139,14 +136,14 @@ ul {
 #top-right {
   padding-right: 20px;
 }
-#topContact #top-right ul {
+
+#top-right ul li {
   font-variant: small-caps;
   font-weight: bold;
-}
-#topContact #top-right ul li {
   padding-left: 8px;
   padding-right: 8px;
   display: inline;
+  white-space: nowrap;
 }
 
 /*Navigation bar grey, panned across the page, and stickied at top*/
@@ -217,6 +214,7 @@ h6 {
 }
 #foot-nav ul li {
   display: inline;
+  white-space: nowrap;
 }
 
 #foot-social {

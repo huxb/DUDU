@@ -1,0 +1,17 @@
+{
+    "contact":{
+        "email":"zhaoqiian@hotmail.com",
+        "phone":"6877 0509"
+    },
+    "location":{
+        "street":"925 Bukit Timah Road",
+        "unit":"#08-13",
+        "po": "Singapore 589640"
+    },
+    "social":{
+        "facebook":"",
+        "twitter":"",
+        "google":"",
+        "rss":""
+    }
+}
