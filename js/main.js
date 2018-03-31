@@ -11,6 +11,7 @@ window.onload = function(e) {
 
 
 //calls content
-$(function () {
-    $("#content").load("home.html");
+$(function(){
+    var pathname = window.location.pathname;
+    $("#content").load("home"+".html");
 });

@@ -13,14 +13,19 @@
   <meta name="author" content="Xiaobo Hu">
   <meta name="keywords" content="读读文学网，看图，议论，记叙，应用，写作网">
   <meta name="description" content="读读文学提供网络作文在线阅读">
+
   <!--CSS -->
+
   <!--Bootstrap 4-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <!--import Roboto-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!--import Roboto | Source Sans Pro-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Arvo" rel="stylesheet">
+
   <!--local css-->
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
 
   <!--JavaScript -->
   <!--placed at the end of the document so pages load faster-->
@@ -31,8 +36,9 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
   <!--Fontawesome-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
 
 
@@ -53,14 +59,14 @@
   </div> -->
 
   <!--Top bar-->
-  <div class="top-edge-shadow container-fluid" id="topContact">
+  <nav class="top-edge-shadow container-fluid" id="topContact">
     <div class="row">
-      <!--Note: hidden-sm-down does not actually work on bs4 for some reason, usage of d-none and d-md-block required https://getbootstrap.com/docs/4.0/utilities/display/-->
+      <!--Top bar left contact-->
       <div class="d-none d-md-block mr-auto" id="top-left">
         <div class="container">
           <div class="row">
-
             <ul>
+              <!--email us-->
               <li class="col glow">
                 <a class="contactDisplay wordColorSchemeInverse" href="mailto:.....@....">
                   <img src="img/Nav-Logo/black-back-closed-envelope-shape.svg" alt="Email" style="width:13px;">
@@ -68,6 +74,7 @@
                 </a>
               </li>
 
+              <!--call us-->
               <li class="col glow">
                 <a class="contactDisplay wordColorSchemeInverse" href="tel:(+65)........">
                   <img src="img/Nav-Logo/speech-bubble.svg" alt="Phone" style="width:13px;">
@@ -75,53 +82,42 @@
                 </a>
               </li>
             </ul>
-
           </div>
         </div>
       </div>
 
+      <!--Top bar right faq login language-->
       <div class="ml-auto" id="top-right">
         <div class="container-fluid">
-          <div class="row">
-            <ul>
-              <li class="col glow">
-                <a class="contactDisplay wordColorSchemeInverse" href="">
-                  <img src="img/Nav-Logo/question-mark.svg" alt="faq" style="width:11px;">
-                  <span class="besideIcon">faq</span>
-                </a>
-              </li>
+          <ul class="row">
+            <!--faq-->
+            <li class="col glow">
+              <a class="contactDisplay wordColorSchemeInverse" href="">
+                <img src="img/Nav-Logo/question-mark.svg" alt="faq" style="width:11px;">
+                <span class="besideIcon">faq</span>
+              </a>
+            </li>
 
-              <!--check cookie and if signed in-->
-              <!--if not signed in-->
-              <li class="col glow">
-                <a class="contactDisplay wordColorSchemeInverse" href="">
-                  <img src="img/Nav-Logo/login.svg" alt="faq" style="width:11px;">
-                  <span class="besideIcon">login</span>
-                </a>
-              </li>
+            <!--Sign in-->
+            <li class="col glow">
+              <a class="contactDisplay wordColorSchemeInverse" href="login.html">
+                <img src="img/Nav-Logo/login.svg" alt="faq" style="width:11px;">
+                <span class="besideIcon">login</span>
+              </a>
+            </li>
 
-              <!--if signed in-->
-              <!--check language block/none-->
-              <!--if english
-                    <li class="nav-item glow" style="display: block;">
-                      <a id="en" class="nav-link contactDisplay wordColorSchemeInverse" href="#">
-                        <img src="img/Nav-Logo/english.svg" alt="en" style="width:11px;">
-                      </a>
-                    </li>
-                      if chinese-->
-              <li class="col glow">
-                <a id="lang" class="contactDisplay wordColorSchemeInverse" href="#">
-                  <img src="img/Nav-Logo/chinese.svg" alt="cn" style="width:15px;">
-                </a>
-              </li>
-
-            </ul>
-          </div>
-
+            <!--Language-->
+            <li class="col glow">
+              <a id="lang" class="contactDisplay wordColorSchemeInverse" href="#">
+                <img src="img/Nav-Logo/chinese.svg" alt="cn" style="width:15px;">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+
     </div>
-  </div>
+  </nav>
 
   <!--Navigation bar (Only one that is stickied)-->
   <!--fixed-top for -ms- else, sticky-top-->
@@ -132,20 +128,26 @@
         <img src="img/Logo/book.png" alt="Logo" style="width:45px;">
       </a>
 
+      <!--Nav menu when screen too narrow-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropDown" aria-controls="navbarDropDown"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!--nav bar-->
       <div class="collapse navbar-collapse" id="navbarDropDown">
+
+        <!--Left nav bar-->
         <ul class="navbar-nav mr-auto">
 
+          <!--Home-->
           <li class="nav-item active">
             <a class="nav-link wordColorScheme active glowInverse" href="#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
 
+          <!--About Us-->
           <li class="nav-item dropdown">
             <a class="wordColorScheme nav-link dropdown-toggle glowInverse" href="javascript:void(0)" id="dropdownAboutUs" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">About Us</a>
@@ -156,6 +158,7 @@
             </div>
           </li>
 
+          <!--Program-->
           <li class="nav-item dropdown">
             <a class="wordColorScheme nav-link dropdown-toggle glowInverse" href="javascript:void(0)" id="dropdownProgram" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Program</a>
@@ -168,6 +171,7 @@
             </div>
           </li>
 
+          <!--Contact Us-->
           <li class="nav-item dropdown">
             <a class="wordColorScheme nav-link dropdown-toggle glowInverse" href="javascript:void(0)" id="dropdownContactUs" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Contact Us</a>
@@ -179,10 +183,14 @@
           </li>
 
         </ul>
+
+        <!--Right nav bar-->
         <form class="form-inline my-4 my-md-0">
           <input class="inset-shadow form-control" placeholder="Search" type="search">
         </form>
+
       </div>
+
     </div>
   </nav>
 
@@ -193,19 +201,22 @@
   <div id="content"></div>
   <div id="contentSkirt" onload="setFootSkirt();"></div>
 
+
   <!--footer-->
   <footer class="foot-edge-shadow" id="foot">
 
+    <!--Top part of Footer-->
     <div class="container" id="foot-top">
       <div class="row">
 
+        <!--Footer left Catch Links-->
         <div class="d-none d-lg-block">
           <div class="container" id="foot-top-left">
             <ul>
               <li class="wordColorSchemeNorm" id="foot-contact">
                 <h4>Contact Us</h4>
                 <div class="container-fluid">
-                  <div class="row">
+                  <nav class="row">
 
                     <div class="col">
 
@@ -229,14 +240,14 @@
                       </a>
                     </div>
 
-                  </div>
+                  </nav>
                 </div>
 
               </li>
 
               <li class="wordColorSchemeNorm" id="foot-nav">
                 <h4>Navigation</h4>
-                <div class="container-fluid">
+                <nav class="container-fluid">
 
                   <ul class="row">
                     <li class="col">
@@ -256,12 +267,12 @@
                     </li>
                   </ul>
 
-                </div>
+                </nav>
               </li>
 
               <li class="wordColorSchemeNorm" id="foot-social">
                 <h4>Follow Us</h4>
-                <div class="container-fluid">
+                <nav class="container-fluid">
                   <ul class="row">
 
                     <li class="col">
@@ -297,75 +308,91 @@
                     </li>
 
                   </ul>
-                </div>
+                </nav>
               </li>
             </ul>
           </div>
         </div>
 
+        <!--Footer Right Message Box-->
         <div class="col">
           <div>
             <h4>Send Us A Message</h4>
           </div>
-          <div>
 
-            <form>
-              <div class="row">
+          <form>
+            <!--First row-->
+            <div class="row">
 
-                <div class="col">
-                  <div class="form-group">
-                    <input type="text" class="inset-shadow form-control" id="input-name" placeholder="First & Last name">
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="form-group">
-                    <input type="email" class="inset-shadow form-control" id="input-password" aria-describedby="nnassurance" placeholder="Email Address">
-                  </div>
+              <!--name-->
+              <div class="col">
+                <div class="form-group">
+                  <input type="text" class="inset-shadow form-control" id="input-name" placeholder="First & Last name">
                 </div>
               </div>
-              <div class="form-group">
-                <select class="inset-shadow form-control" id="edu-level">
-                  <option value="" disable selected hidden>Education Level of Child</option>
-                  <option>Pre-School</option>
-                  <option>Primary 1 & 2</option>
-                  <option>Primary 3 & 4</option>
-                  <option>Primary 5 & 6</option>
-                  <option>Secondary</option>
-                </select>
-              </div>
-              <div class="form-group" id="txt">
-                <textarea class="inset-shadow form-control" id="input-txt" rows="3" placeholder="Question"></textarea>
-              </div>
-              <small class="form-text text-muted alignLeft" id="nnassurance">We'll never share your personal information with anyone else.</small>
-              <div class="row">
 
-                <div class="col">
-                  <div class="form-check alignLeft">
-                    <label class="form-check-label" id="check-send">
-                      <input type="checkbox" class="inset-shadow form-check-input">Receive a copy of this question as Email
-                    </label>
-                  </div>
+              <!--email-->
+              <div class="col">
+                <div class="form-group">
+                  <input type="email" class="inset-shadow form-control" id="input-password" aria-describedby="nnassurance" placeholder="Email Address">
                 </div>
-
-                <div class="col">
-                  <button type="submit" class="float-right inset-shadow-btn btn btn-primary">Send Message</button>
-                </div>
-
               </div>
-            </form>
 
-          </div>
+            </div>
+
+            <!--Second Row-->
+            <!--Education-->
+            <div class="form-group">
+              <select class="inset-shadow form-control" id="edu-level">
+                <option value="" disable selected hidden>Education Level of Child</option>
+                <option>Pre-School</option>
+                <option>Primary 1 & 2</option>
+                <option>Primary 3 & 4</option>
+                <option>Primary 5 & 6</option>
+                <option>Secondary</option>
+              </select>
+            </div>
+
+            <!--Third Row-->
+            <!--Question txt-->
+            <div class="form-group" id="txt">
+              <textarea class="inset-shadow form-control" id="input-txt" rows="3" placeholder="Question"></textarea>
+            </div>
+
+            <!--Privacy Assurance-->
+            <small class="form-text text-muted alignLeft" id="nnassurance">We'll never share your personal information with anyone else.</small>
+
+            <!--Final Row-->
+            <div class="row">
+
+              <!--email copy-->
+              <div class="col">
+                <div class="form-check alignLeft">
+                  <label class="wordColorSchemeNorm form-check-label" id="check-send">
+                    <input type="checkbox" class="inset-shadow form-check-input">Receive a copy of this question as Email
+                  </label>
+                </div>
+              </div>
+
+              <!--Submit button-->
+              <div class="col">
+                <button type="submit" class="float-right inset-shadow-btn btn btn-primary">Send Message</button>
+              </div>
+
+            </div>
+
+          </form>
+
         </div>
+
       </div>
-
     </div>
-    <!--
-    <div class="container" id="foot-base">
-      <div class="row">-->
 
+    <!--Divider Line-->
     <div class="line"></div>
-    <div id="legal">
+
+    <!--Legal Nav-->
+    <nav id="legal">
       <ul>
         <li>
           <a class="wordColorScheme glow" href="#">Legal</a>
@@ -380,22 +407,19 @@
           <a class="wordColorScheme glow" href="#">Help</a>
         </li>
       </ul>
+    </nav>
 
-    </div>
-
-    <!--
-      </div>
-
-    </div>-->
-
+    <!--Final Copyright bar-->
     <div id="copyright">
       <p>© 2018 All Rights Reserved</p>
     </div>
+
   </footer>
 
   <!--local js-->
 
   <script src="js/main.js"></script>
+  <script>loadContent(home)</script>
   <script src="js/StopCopyCut.js"></script>
   <script>
   </script>
