@@ -143,7 +143,6 @@ Specificity issue:
   
 TODO: +1 day
 Monday{
-  Footer
   login page
   faq page
 }
