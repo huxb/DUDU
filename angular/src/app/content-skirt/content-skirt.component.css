@@ -1,0 +1,7 @@
+
+
+/*content skirt to show footer*/
+#contentSkirt {
+    position: relative;
+    z-index: -1;
+  }

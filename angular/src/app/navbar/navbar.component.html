@@ -1,0 +1,113 @@
+<nav class="bot-edge-shadow navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container-fluid">
+
+    <!--Logo-->
+    <a class="navbar-brand" href="#" title="优倩补习网">
+      <img src="" alt="Logo" style="width:45px;">
+    </a>
+
+    <!--Nav menu when screen too narrow-->
+    <button class="navbar-toggler" type="button" (click)="toggleCollapsed()" data-toggle="collapse" data-target="#navbarDropDown"
+      aria-controls="navbarDropDown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ngToggler></span>
+    </button>
+
+    <!--nav bar when screen too narrow, hidden in css otherwise-->
+    <div class="collapse navbar-collapse" [ngbCollapse]="collapsed" id="navbarDropDown">
+      <!--Left nav bar-->
+      <ul class="navbar-nav">
+        <!--Home-->
+        <li class="nav-item">
+          <a class="wordColorScheme nav-link glowInverse" href="javascript:void(0)" routerLink="">
+            Home
+          </a>
+        </li>
+        <!--About Us-->
+        <li class="nav-item">
+          <a class="wordColorScheme nav-link glowInverse" href="javascript:void(0)" routerLink="aboutUs">
+            About Us
+          </a>
+        </li>
+        <!--Program-->
+        <li class="nav-item">
+          <a class="wordColorScheme nav-link glowInverse" href="javascript:void(0)" routerLink="program">
+            Program
+          </a>
+        </li>
+        <!--Contact Us-->
+        <li class="nav-item">
+          <a class="wordColorScheme nav-link glowInverse" href="javascript:void(0)" routerLink="contactUs">
+            Contact Us
+          </a>
+        </li>
+        <!--Search form-->
+        <li>
+          <form class="form-inline my-4 my-md-0">
+            <input class="inset-shadow form-control" placeholder="Search" type="search">
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <!--nav bar normal-->
+    <div class="collapse navbar-collapse">
+
+      <!--Left nav bar-->
+      <ul class="navbar-nav mr-auto">
+
+        <!--Home-->
+        <li class="nav-item">
+          <a class="wordColorScheme nav-link glowInverse" href="javascript:void(0)" routerLink="">
+            Home
+          </a>
+        </li>
+
+        <!--About Us-->
+        <li ngbDropdown>
+          <a class="wordColorScheme glowInverse" href="javascript:void(0)" id="dropdownAboutUs" ngbDropdownToggle routerLink="aboutUs">
+            <span>About Us</span>
+          </a>
+          <div ngbDropdownMenu aria-labelledby="dropdownAboutUs">
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">About Us</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Past Achievements</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Teaching Model</a>
+          </div>
+        </li>
+
+        <!--Program-->
+        <li ngbDropdown>
+          <a class="wordColorScheme glowInverse" href="javascript:void(0)" id="dropdownProgram" ngbDropdownToggle routerLink="program">
+            <span>Program</span>
+          </a>
+          <div ngbDropdownMenu aria-labelledby="dropdownProgram">
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Pre-school</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Primary 1 & 2</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Primary 3 & 4</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Primary 5 & 6</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Secondary</a>
+          </div>
+        </li>
+
+        <!--Contact Us-->
+        <li ngbDropdown>
+          <a class="wordColorScheme glowInverse" href="javascript:void(0)" id="dropdownContact" ngbDropdownToggle routerLink="contactUs">
+            <span>Contact Us</span>
+          </a>
+          <div ngbDropdownMenu aria-labelledby="dropdownContact">
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">FAQ</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Email Us</a>
+            <a class="wordColorSchemeInverse dropdown-item glow" href="">Call Us</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <!--Right nav bar-->
+      <form class="form-inline my-4 my-md-0">
+        <input class="inset-shadow form-control" placeholder="Search" type="search">
+      </form>
+
+    </div>
+
+  </div>
+</nav>

@@ -1,1 +1,118 @@
-/* You can add global styles to this file, and also import other style files */
+/*Bootstrap 4*/
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* Roboto | Source Sans Pro | Arvo */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Arvo");
+
+body {
+  font-size: 20px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  text-decoration: none;
+  background-color: rgb(84, 80, 68);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arvo;
+  padding-bottom: 5px;
+}
+
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.alignLeft {
+  text-align: left;
+  margin: 0px;
+}
+
+ul {
+  list-style: none outside none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  display: inline;
+}
+
+/*Color scheme*/
+.wordColorSchemeInverse {
+  color: rgba(85, 85, 85, 0.75);
+}
+.wordColorScheme {
+  color: rgba(255, 255, 255, 0.5);
+}
+.wordColorSchemeNorm {
+  color: rgba(255, 255, 255, 0.5);
+}
+.wordColorSchemeNormDark {
+  color: rgba(255, 255, 255, 0.7);
+}
+.wordColorSchemeInverse:hover {
+  color: rgba(25, 25, 25, 0.75) !important;
+  text-decoration: none;
+}
+.wordColorScheme:hover {
+  color: rgb(240, 240, 240) !important;
+  text-decoration: none;
+}
+.glow:hover {
+  -webkit-text-stroke-width: 0.15px;
+  stroke-width: 0.15px;
+
+  -webkit-text-shadow: 1px 0px 20px rgba(124, 127, 153, 0.6);
+  -moz-text-shadow: 1px 0px 20px rgba(124, 127, 153, 0.6);
+  -ms-text-shadow: 1px 0px 20px rgba(124, 127, 153, 0.6);
+  -o-text-shadow: 1px 0px 20px rgba(124, 127, 153, 0.6);
+  text-shadow: 1px 0px 20px rgba(124, 127, 153, 0.6);
+}
+.glowInverse:hover {
+  -webkit-text-stroke-width: 0.3px;
+  stroke-width: 0.3px;
+
+  -webkit-text-shadow: 1px 0px 20px rgba(87, 94, 100, 0.8);
+  -moz-text-shadow: 1px 0px 20px rgba(87, 94, 100, 0.8);
+  -ms-text-shadow: 1px 0px 20px rgba(87, 94, 100, 0.8);
+  -o-text-shadow: 1px 0px 20px rgba(87, 94, 100, 0.8);
+  text-shadow: 1px 0px 20px rgba(87, 94, 100, 0.8);
+}
+
+/*Smooths top and bottom edges for top, topNav and botNav*/
+.top-edge-shadow {
+  -webkit-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+  -moz-box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+  box-shadow: 0 -4px 6px -6px rgb(161, 161, 161);
+}
+.bot-edge-shadow {
+  -webkit-box-shadow: 0 8px 6px -6px rgb(192, 192, 192);
+  -moz-box-shadow: 0 8px 6px -6px rgb(192, 192, 192);
+  box-shadow: 0 8px 6px -6px rgb(192, 192, 192);
+}
+.foot-edge-shadow {
+  -webkit-box-shadow: 0 -8px 6px -6px rgb(192, 192, 192);
+  -moz-box-shadow: 0 -8px 6px -6px rgb(192, 192, 192);
+  box-shadow: 0 -8px 6px -6px rgb(192, 192, 192);
+}
+.inset-shadow {
+  -webkit-box-shadow: inset 0px -1px 8px 1px rgb(161, 161, 161);
+  -moz-box-shadow: inset 0px -1px 8px 1px rgb(161, 161, 161);
+  box-shadow: inset 0px -1px 8px 1px rgb(161, 161, 161);
+}
+.inset-shadow-btn {
+  -webkit-box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
+  -moz-box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
+  box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
+}

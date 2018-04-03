@@ -1,0 +1,26 @@
+/*Navigation bar grey, panned across the page, and stickied at top*/
+nav {
+  border-top: 2.5px solid rgba(192, 192, 192, 0.96);
+  background-color: rgba(69, 78, 85, 0.96);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 30px;
+  white-space: nowrap;
+  align-items: center;
+}
+
+nav ul li {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+
+nav ul li a {
+  padding: 8px;
+}
+
+@media screen and (min-width: 990px) {
+  #navbarDropDown {
+    display: none !important;
+  }
+}

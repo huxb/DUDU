@@ -1,0 +1,33 @@
+
+/* top contact nav*/
+#topContact {
+    background-color: rgba(192, 192, 192, 0.96);
+    font-size: 13px;
+    height: 20px;
+    padding-bottom: 6.5px;
+    position: relative;
+    z-index: 1;
+  }
+  #top-left {
+    padding-left: 20px;
+  }
+  .besideIcon {
+    vertical-align: middle;
+  }
+  #top-left ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline;
+  }
+  #top-right {
+    padding-right: 20px;
+  }
+  
+  #top-right ul li {
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline;
+    white-space: nowrap;
+  }

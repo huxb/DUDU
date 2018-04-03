@@ -1,0 +1,8 @@
+#content {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-inner div img {
+  width: 100%;
+}
