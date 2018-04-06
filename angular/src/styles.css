@@ -116,3 +116,8 @@ ul li {
   -moz-box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
   box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
 }
+
+.content {
+  position: relative;
+  z-index: 2;
+}

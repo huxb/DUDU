@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProgramComponent } from './program/program.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ContentSkirtComponent } from './content-skirt/content-skirt.component';
 import { FooterComponent } from './footer/footer.component';
 import { LegalComponent } from './legal/legal.component';
 
@@ -27,7 +26,6 @@ import { LegalComponent } from './legal/legal.component';
     AboutUsComponent,
     ProgramComponent,
     ContactUsComponent,
-    ContentSkirtComponent,
     FooterComponent,
     LegalComponent,
   ],
