@@ -51,6 +51,11 @@
             <li class="col glow">
               <a id="lang" class="contactDisplay wordColorSchemeInverse" href="#">
                 <img src="img/Nav-Logo/chinese.svg" alt="cn" style="width:15px;">
+                <span *ngIf="!token">Chinese</span>
+              </a>
+              <a id="lang" class="contactDisplay wordColorSchemeInverse" href="#">
+                <img src="img/Nav-Logo/chinese.svg" alt="cn" style="width:15px;">
+                <span *ngIf="token">English</span>
               </a>
             </li>
           </ul>

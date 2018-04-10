@@ -20,7 +20,7 @@ const routes: Routes = [
 /*Use Routes*/
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   exports: [ 
     RouterModule

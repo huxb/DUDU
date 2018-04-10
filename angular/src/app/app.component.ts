@@ -6,23 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  searchTerm = '';
-  isCollapsed = true;
-
-  get token() {
-    return localStorage.getItem('token');
-  }
-
-  collapse() {
-    this.isCollapsed = true;
-  }
-
-  closeDropdown(dropdown) {
-    dropdown.close();
-  }
-
-  logout() {}
-
-  search() {}
-  
+  title = 'app';
 }

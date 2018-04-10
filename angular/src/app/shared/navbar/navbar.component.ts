@@ -16,6 +16,20 @@ export class NavbarComponent implements OnInit {
     this.collapsed = !this.collapsed;
   }
 
+  searchTerm = '';
+
+  get token() {
+    return localStorage.getItem('token');
+  }
+
+  closeDropdown(dropdown) {
+    dropdown.close();
+  }
+
+  logout() {}
+
+  search() {}
+  
   constructor() { }
 
   ngOnInit() {

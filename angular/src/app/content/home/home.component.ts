@@ -8,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
     class: 'position-2'
   }
 })
+
+
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  }
 
   ngOnInit() {
   }

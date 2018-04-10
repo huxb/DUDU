@@ -43,7 +43,10 @@
         <!--Search form-->
         <li>
           <form class="form-inline my-4 my-md-0">
-            <input class="inset-shadow form-control" placeholder="Search" type="search">
+            <input class="inset-shadow form-control" placeholder="Search" type="text" name="search" [(ngModel)]="searchTerm" (keyup.enterr)="search()">
+            <span class="searchBtn" class="wordColorScheme bg-warning" (click)="search()">
+              <i class="fa-search"></i>
+            </span>
           </form>
         </li>
       </ul>
@@ -103,8 +106,11 @@
       </ul>
 
       <!--Right nav bar-->
-      <form class="form-inline my-4 my-md-0">
-        <input class="inset-shadow form-control" placeholder="Search" type="search">
+      <form class="form-inline my-4 my-md-0">            
+        <input class="inset-shadow form-control" placeholder="Search" type="text" name="search" [(ngModel)]="searchTerm" (keyup.enterr)="search()">
+        <span class="searchBtn" class="wordColorScheme bg-warning" (click)="search()">
+            <i class="fa fa-search" aria-label="search"></i>
+        </span>
       </form>
 
     </div>

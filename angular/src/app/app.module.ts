@@ -4,6 +4,10 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RestApiService } from './rest-api.service';
+import { DataService } from './data.service';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 /*bootstrap*/
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -18,6 +22,7 @@ import { ProgramComponent } from './content/program/program.component';
 import { ContactUsComponent } from './content/contact-us/contact-us.component';
 import { LegalComponent } from './content/legal/legal.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { MessageComponent } from './shared/message/message.component';
 
 @NgModule({
   declarations: [
@@ -31,15 +36,18 @@ import { FooterComponent } from './shared/footer/footer.component';
     ContactUsComponent,
     FooterComponent,
     LegalComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    Ng2CarouselamosModule,
+    AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [RestApiService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
