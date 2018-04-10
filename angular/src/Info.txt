@@ -1,0 +1,19 @@
+Layout of website 
+    notebar
+    topbar(1)
+    navbar(999)
+
+    content(1)
+        carousell
+        link | content
+
+    footer
+        skirt(-1)
+        links(1)
+
+z-index are set in style using position-* class
+
+Apparently there is no way to share data between apps, had to construct contact info twice
+
+Problems:
+Footer would load with 600+ offsetHeight until page is clicked on

@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { ProgramComponent } from './program/program.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
-import { LegalComponent } from './legal/legal.component';
+import { HomeComponent } from './content/home/home.component';
+import { AboutUsComponent } from './content/about-us/about-us.component';
+import { ProgramComponent } from './content/program/program.component';
+import { ContactUsComponent } from './content/contact-us/contact-us.component';
+import { LegalComponent } from './content/legal/legal.component';
+
 
 /*Set Routes*/
 const routes: Routes = [

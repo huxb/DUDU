@@ -1,6 +1,5 @@
 /*content skirt to show footer*/
 #contentSkirt {
-  position: relative;
   z-index: -1;
 }
 
@@ -12,7 +11,7 @@ footer {
     text-align: center;
     background-color: rgba(84, 80, 68, 0.96);
     font-size: 13px;
-    z-index: 1;
+    padding: 0px;
   }
   
   #foot-top {

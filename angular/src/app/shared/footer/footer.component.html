@@ -18,20 +18,26 @@
                   <div class="locateUs col">
 
                     <h6 class="wordColorSchemeNormDark">Location</h6>
-                    <a class="wordColorScheme glow" href="" target="_blank"></a>
+                    <a class="wordColorScheme glow" target="_blank">
+                      {{this.locationStreet}}
+                      <br>
+                      {{this.locationUnit}}
+                      <br>
+                      {{this.locationPo}}
+                    </a>
                   </div>
 
                   <div class="emailUs col">
                     <h6 class="wordColorSchemeNormDark">Email Us</h6>
-                    <a class="wordColorScheme glow" href="">
-                      <span></span>
+                    <a class="wordColorScheme glow">
+                      {{this.contactEmail}}
                     </a>
                   </div>
 
                   <div class="callUs col">
                     <h6 class="wordColorSchemeNormDark">Call Us</h6>
-                    <a class="wordColorScheme glow" href="">
-                      <span></span>
+                    <a class="wordColorScheme glow">
+                      (+65) {{this.contactPhone}}
                     </a>
                   </div>
 
@@ -46,19 +52,19 @@
 
                 <ul class="row">
                   <li class="col">
-                    <a class="wordColorScheme glow" href="">Home</a>
+                    <a class="wordColorScheme glow" routerLink="">Home</a>
                   </li>
                   <li class="col">
-                    <a class="wordColorScheme glow" href="">Program</a>
+                    <a class="wordColorScheme glow" routerLink="about">About Us</a>
                   </li>
                   <li class="col">
-                    <a class="wordColorScheme glow" href="">About Us</a>
+                    <a class="wordColorScheme glow" routerLink="program">Program</a>
                   </li>
                   <li class="col">
-                    <a class="wordColorScheme glow" href="">Support</a>
+                    <a class="wordColorScheme glow" routerLink="contact">Support</a>
                   </li>
                   <li class="col">
-                    <a class="wordColorScheme glow" href="">Sign Up</a>
+                    <a class="wordColorScheme glow" routerLink="">Sign Up</a>
                   </li>
                 </ul>
 

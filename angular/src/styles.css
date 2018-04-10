@@ -117,7 +117,15 @@ ul li {
   box-shadow: inset 0px -1px 8px 1px rgb(179, 152, 0);
 }
 
-.content {
+.position-3 {
   position: relative;
-  z-index: 2;
+  z-index: 3 !important;
+}
+.position-2 {
+  position: relative;
+  z-index: 2 !important;
+}
+.position-1 {
+  position: relative;
+  z-index: 1 !important;
 }

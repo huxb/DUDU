@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, NgModule } from '@angular/core';
 
-import * as $ from 'jquery';
+/*bootstrap*/
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-navbar',
@@ -22,4 +23,8 @@ export class NavbarComponent implements OnInit {
 
 }
 
-
+@NgModule({
+  declarations: [NavbarComponent],
+  imports: [NgbModule]
+})
+export class OtherModule {}

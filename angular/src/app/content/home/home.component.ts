@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   host: {
-    class:'content'
+    class: 'position-2'
   }
 })
 export class HomeComponent implements OnInit {
