@@ -18,13 +18,7 @@ import { Component, OnInit, NgModule } from '@angular/core';
 
 export class ContactUsComponent implements OnInit {
 
-  items: Array<any> = [];
-
   constructor() {
-    this.items = [
-      { url: '../../assets/img/carousel slides/background.jpg' },
-      { url: '../../assets/img/carousel slides/cofefe.jpg' }
-    ]
   }
 
   ngOnInit() {

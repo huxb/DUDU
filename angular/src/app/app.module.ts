@@ -4,8 +4,6 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RestApiService } from './rest-api.service';
-import { DataService } from './data.service';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
@@ -16,13 +14,13 @@ import { AppComponent } from './app.component';
 import { NotebarComponent } from './shared/notebar/notebar.component';
 import { TopbarComponent } from './shared/topbar/topbar.component';
 import { NavbarComponent } from './shared/navbar/navbar.component'; 
+import { FooterComponent } from './shared/footer/footer.component';
+import { MessageComponent } from './shared/message/message.component';
 import { HomeComponent } from './content/home/home.component';
 import { AboutUsComponent } from './content/about-us/about-us.component';
 import { ProgramComponent } from './content/program/program.component';
 import { ContactUsComponent } from './content/contact-us/contact-us.component';
 import { LegalComponent } from './content/legal/legal.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { MessageComponent } from './shared/message/message.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +45,6 @@ import { MessageComponent } from './shared/message/message.component';
     Ng2CarouselamosModule,
     AngularFontAwesomeModule
   ],
-  providers: [RestApiService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
