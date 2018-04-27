@@ -9,7 +9,7 @@ body {
   border: 0px;
   padding: 0px;
   text-decoration: none;
-  background-color: rgb(84, 80, 68);
+  background-color: rgb(179, 165, 128);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -115,7 +115,7 @@ ul {
 
 /* top contact nav*/
 #topContact {
-  background-color: rgba(192, 192, 192, 0.96);
+  background-color: rgba(254, 253, 232, 0.96);
   font-size: 13px;
   height: 20px;
   padding-bottom: 6.5px;
@@ -148,8 +148,8 @@ ul {
 
 /*Navigation bar grey, panned across the page, and stickied at top*/
 #topNav {
-  border-top: 2.5px solid rgba(192, 192, 192, 0.96);
-  background-color: rgba(69, 78, 85, 0.96);
+  border-top: 2.5px solid rgba(254, 253, 232, 0.96);
+  background-color: rgb(179, 165, 128, 0.96);
   padding-top: 5px;
   padding-bottom: 5px;
   min-height: 30px;
@@ -160,7 +160,7 @@ ul {
 }
 
 .carousel-inner div img {
-  width: 100%;
+  width: 85%;
 }
 
 /*content*/
@@ -181,7 +181,7 @@ footer {
   width: 100%;
   position: fixed;
   text-align: center;
-  background-color: rgba(84, 80, 68, 0.96);
+  background-color: rgba(104, 86, 66, 0.96);
   font-size: 13px;
 }
 

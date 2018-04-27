@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+/*Bootstrap 4*/
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* Roboto | Source Sans Pro | Arvo */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Arvo");
+
+body {
+  font-size: 20px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  text-decoration: none;
+  background-color: rgb(179, 165, 128);
+}
+
+ul {
+    list-style: none outside none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .leftF {
+    float: left;
+  }
+
+  .rightF {
+    float: right;
+  }
