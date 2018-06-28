@@ -1,0 +1,75 @@
+#left-nav-container {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 45px;
+    height: 244.5px;
+    width: 70px;
+    margin: -122.25px 0 0 -35px;
+}
+
+.left-nav-icon {
+    display: block;
+    fill: rgba(93, 78, 60, 0.96);
+    margin: 2.5px;
+}
+.left-nav-icon svg {
+    fill: rgba(93, 78, 60, 0.96);
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: block;
+}
+.left-nav-icon p {
+    color: rgba(93, 78, 60, 0.96);
+    font-variant: small-caps;
+    white-space: nowrap;
+    text-decoration: none !important;
+    font-family: Arvo;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: -5px;
+    font-size: 12px;
+    margin: 0px;
+}
+.left-nav-icon:hover {
+    cursor: pointer;
+}
+.svg-text-bracket {
+    fill: none;
+}
+
+#left-nav-home .st1 {
+    stroke: rgba(93, 78, 60, 0.96);
+    stroke-miterlimit: 10;
+    stroke-width: 7;
+}
+
+#left-nav-home:hover .st0 {
+    fill: gold;
+}
+#left-nav-home:hover p {
+    color: gold;
+}
+
+#left-nav-aboutUs:hover .st0 {
+    fill: #84FF3F;
+}
+#left-nav-aboutUs:hover p {
+    color: #84FF3F;
+}
+
+#left-nav-program:hover .st0 {
+    fill: gold;
+}
+#left-nav-program:hover p {
+    color: gold;
+}
+
+#left-nav-contactUs:hover .st0 {
+    fill: #84FF3F;
+}
+#left-nav-contactUs:hover p {
+    color: #84FF3F;
+}

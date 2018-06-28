@@ -1,0 +1,45 @@
+.content-center {
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 85%;
+    width: 90%;
+    position: absolute;
+    overflow: hidden;
+    background: rgb(179, 165, 128);
+    z-index: 6;
+}
+
+#content-head {
+    background: linear-gradient(rgb(179, 165, 128), rgba(179, 165, 128, 0.1));
+    padding-top: 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 7 !important;
+}
+
+#content-home {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: absolute;
+    padding-right: 4%;
+    margin-right: -18px;
+    height: 80%;
+    overflow-y: scroll;
+    box-sizing: content-box;
+}
+
+#home-foot {
+    position: relative;
+    padding-bottom: 5%;
+}
+
+#content-foot {
+    background: linear-gradient(rgba(179, 165, 128,0.1), rgb(179, 165, 128));
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: 7 !important;
+}

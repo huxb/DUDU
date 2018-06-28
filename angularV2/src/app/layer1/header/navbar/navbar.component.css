@@ -4,6 +4,7 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  display: block;
 }
 
 #logo {
@@ -13,25 +14,53 @@
 }
 
 #nav-logup {
-  margin-top: 10px;
   display: inline-block;
 }
 
 .button {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 6.5px;
   padding-bottom: 6.5px;
   white-space: nowrap;
   display: inline-block;
 }
 
+
+.nav-top-logo {
+  fill: rgba(93, 78, 60, 0.96);
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  display: block;
+}
+p {
+  color: rgba(93, 78, 60, 0.96);
+  font-variant: small-caps;
+  white-space: nowrap;
+  font-family: Arvo;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  margin: 0px;
+}
+
 #nav-login {
-  background-color: blue;
   margin-right: 6px;
 }
-#nav-signup {
-  background-color: white;
+#nav-signup .st0{
+  fill: none;
+  stroke: rgba(93, 78, 60, 0.96);
+  stroke-miterlimit: 10;
+}
+
+
+#nav-login:hover .glow {
+  fill: gold;
+}
+#nav-signup:hover .glow {
+  fill: gold;
 }
 
 #nav-search {

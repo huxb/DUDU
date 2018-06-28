@@ -3,21 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { ContentRoutingModule } from './/content/content-routing.module';
+import { ContentRoutingModule } from './/app.routing.module';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { NavbarComponent } from './shared/header/navbar/navbar.component';
-import { NoticebarComponent } from './shared/header/noticebar/noticebar.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { HomeComponent } from './content/home/home.component';
-import { AboutUsComponent } from './content/about-us/about-us.component';
-import { ProgramComponent } from './content/program/program.component';
-import { ContactUsComponent } from './content/contact-us/contact-us.component';
-import { ContentComponent } from './content/content.component';
-import { LeftNavBtnComponent } from './shared/left-nav-btn/left-nav-btn.component';
+import { HeaderComponent } from './layer1/header/header.component';
+import { NavbarComponent } from './layer1/header/navbar/navbar.component';
+import { NoticebarComponent } from './layer1/header/noticebar/noticebar.component';
+import { Layer1Component } from './layer1/layer1.component';
+import { AboutUsComponent } from './layer2/about-us/about-us.component';
+import { ContactUsComponent } from './layer2/contact-us/contact-us.component';
+import { FooterComponent } from './layer2/footer/footer.component';
+import { HomeComponent } from './layer2/home/home.component';
+import { LeftNavBtnComponent } from './layer2/left-nav-btn/left-nav-btn.component';
+import { ProgramComponent } from './layer2/program/program.component';
+import { Layer2Component } from './layer2/layer2.component';
 
 
 @NgModule({
@@ -26,13 +27,14 @@ import { LeftNavBtnComponent } from './shared/left-nav-btn/left-nav-btn.componen
     HeaderComponent,
     NavbarComponent,
     NoticebarComponent,
+    Layer1Component,
+    AboutUsComponent,
+    ContactUsComponent,
     FooterComponent,
     HomeComponent,
-    AboutUsComponent,
+    LeftNavBtnComponent,
     ProgramComponent,
-    ContactUsComponent,
-    ContentComponent,
-    LeftNavBtnComponent
+    Layer2Component
   ],
   imports: [
     BrowserModule,

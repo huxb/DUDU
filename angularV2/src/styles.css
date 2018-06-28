@@ -10,20 +10,27 @@ body {
   margin: 0px;
   border: 0px;
   padding: 0px;
+  height: 100%;
   text-decoration: none;
   background-color: rgb(179, 165, 128);
+  overflow: hidden;
 }
 
 ul {
-    list-style: none outside none;
-    padding: 0px;
-    margin: 0px;
-  }
+  list-style: none outside none;
+  padding: 0px;
+  margin: 0px;
+}
 
-  .leftF {
-    float: left;
-  }
+.leftF {
+  float: left;
+}
 
-  .rightF {
-    float: right;
-  }
+.rightF {
+  float: right;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}

@@ -1,6 +1,6 @@
 #header {
     width: 100%;
     position: fixed;
-    line-height: 16px;
     top: 0px;
+    z-index: inherit !important;
 }
