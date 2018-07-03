@@ -1,0 +1,117 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+#nav-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  display: block;
+}
+
+#logo {
+  padding-right: 15px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#nav-logup {
+  display: inline-block;
+}
+
+.button {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.nav-top-logo {
+  fill: rgba(93, 78, 60, 0.96);
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  display: block;
+}
+p {
+  color: rgba(93, 78, 60, 0.96);
+  font-variant: small-caps;
+  white-space: nowrap;
+  font-family: Arvo;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  margin: 0px;
+}
+
+#nav-login {
+  margin-right: 6px;
+}
+#nav-signup .st0 {
+  fill: none;
+  stroke: rgba(93, 78, 60, 0.96);
+  stroke-miterlimit: 10;
+}
+
+#nav-login:hover .glow {
+  fill: gold;
+}
+#nav-signup:hover .glow {
+  fill: gold;
+}
+
+#nav-search {
+  position: relative;
+  vertical-align: baseline;
+  display: inline-block;
+  margin-top: 12.5px;
+}
+
+#nav-form-input {
+  background-image: url(/../assets/Image/search.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 3px;
+  background-position-y: 4px;
+  padding-left: 30px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid rgb(213, 217, 221);
+  border-radius: 4px;
+  height: 30px;
+  width: 350px;
+}
+
+.leftF {
+  float: left;
+}
+
+.rightF {
+  float: right;
+}
+@media screen and (max-width: 600px) {
+  #nav-search {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  #nav-container {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #nav-container {
+    width: 970px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #nav-container {
+    width: 1170px;
+  }
+}
