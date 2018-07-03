@@ -1,11 +1,12 @@
+import { InvalidComponent } from './layer1/invalid/invalid.component';
 import { Layer1Component } from './layer1/layer1.component';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes, ChildrenOutletContexts } from '@angular/router';
 
-import { HomeComponent } from './layer2/home/home.component';
-import { AboutUsComponent } from './layer2/about-us/about-us.component';
-import { ProgramComponent } from './layer2/program/program.component';
-import { ContactUsComponent } from './layer2/contact-us/contact-us.component';
+import { HomeComponent } from './layer2/intro/home/home.component';
+import { AboutUsComponent } from './layer2/intro/about-us/about-us.component';
+import { ProgramComponent } from './layer2/intro/program/program.component';
+import { ContactUsComponent } from './layer2/intro/contact-us/contact-us.component';
 
 
 /*Set Routes*/
@@ -31,6 +32,10 @@ export const routesConfig: Routes = [
         component: ContactUsComponent
       }
     ]
+  },
+  {
+    path: '**',
+    component: InvalidComponent
   }
 ];
 

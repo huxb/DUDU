@@ -1,9 +1,9 @@
 #left-nav-container {
     display: block;
     position: fixed;
-    top: 50%;
-    left: 45px;
-    height: 244.5px;
+    top: 45%;
+    left: 50px;
+    height: 204.5px;
     width: 70px;
     margin: -122.25px 0 0 -35px;
 }
