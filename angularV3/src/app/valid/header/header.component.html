@@ -4,8 +4,9 @@
 <nav>
   <div id="nav-container">
 
-    <h1 id="logo" class="leftF">文心</h1>
-
+    <a routerLink="">
+      <h1 id="logo" class="leftF">文心</h1>
+    </a>
 
     <div id="nav-search" class="leftF">
       <form id="nav-form-search" method="get">
@@ -14,7 +15,7 @@
     </div>
 
     <div id="nav-logup" class="rightF">
-      <a class="login button" id="nav-login" href="" role="button">
+      <a class="login button" id="nav-login" routerLink="/login">
         <div>
           <svg version="1.1" class="nav-top-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 40.3 40" style="enable-background:new 0 0 40.3 40;" xml:space="preserve">
@@ -35,7 +36,7 @@
         </div>
       </a>
 
-      <a class="signup button" id="nav-signup" href="" role="button">
+      <a class="signup button" id="nav-signup" routerLink="/signup">
         <div>
           <svg version="1.1" class="nav-top-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 39.8 41" style="enable-background:new 0 0 39.8 41;" xml:space="preserve">

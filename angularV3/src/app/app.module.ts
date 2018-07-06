@@ -10,11 +10,12 @@ import { HeaderComponent } from './valid/header/header.component';
 import { FooterComponent } from './valid/footer/footer.component';
 import { IntroComponent } from './valid/intro/intro.component';
 import { SideNavComponent } from './valid/intro/side-nav/side-nav.component';
-import { ContentComponent } from './valid/intro/content/content.component';
 import { HomeComponent } from './valid/intro/content/home/home.component';
 import { AboutUsComponent } from './valid/intro/content/about-us/about-us.component';
 import { ProgramComponent } from './valid/intro/content/program/program.component';
 import { ContactUsComponent } from './valid/intro/content/contact-us/contact-us.component';
+import { LoginComponent } from './valid/login/login.component';
+import { SignupComponent } from './valid/signup/signup.component';
 
 
 @NgModule({
@@ -26,11 +27,12 @@ import { ContactUsComponent } from './valid/intro/content/contact-us/contact-us.
     FooterComponent,
     IntroComponent,
     SideNavComponent,
-    ContentComponent,
     HomeComponent,
     AboutUsComponent,
     ProgramComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
